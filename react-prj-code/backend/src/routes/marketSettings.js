@@ -1,0 +1,157 @@
+const express = require("express");
+const marketSettingsController = require("../controllers/marketSettings");
+const authController = require("../controllers/auth");
+
+const router = express.Router();
+
+router.get(
+	"/",
+	authController.ValidateToken,
+	marketSettingsController.FetchAllMarketSettings
+);
+router.get(
+	"/:CountryId",
+	authController.ValidateToken,
+	marketSettingsController.FetchOneMarketSetting
+);
+router.get(
+	"/currencies/all",
+	authController.ValidateToken,
+	marketSettingsController.FetchAllCurrencies
+);
+
+router.get(
+	"/:VerticalId/approvers/all",
+	authController.ValidateToken,
+	marketSettingsController.GetApproversByVertical
+);
+
+router.get(
+	"/:CountryCode/requesttypes/all",
+	authController.ValidateToken,
+	marketSettingsController.GetRequestTypesByCountry
+);
+
+
+router.post(
+	"/:BusinessUnitId/formlayouts/",
+	authController.ValidateToken,
+	marketSettingsController.SetupFormLayouts
+);
+router.post(
+	"/:CountryId/businessunits/",
+	authController.ValidateToken,
+	marketSettingsController.CreateBusinessUnit
+);
+router.post(
+	"/:CountryId/offices/",
+	authController.ValidateToken,
+	marketSettingsController.CreateOffice
+);
+router.post(
+	"/:BusinessUnitId/verticals/",
+	authController.ValidateToken,
+	marketSettingsController.CreateVertical
+);
+router.get(
+	"/:BusinessUnitId/clientservicerates/all",
+	authController.ValidateToken,
+	marketSettingsController.GetCSRatesByBusinessUnit
+);
+router.post(
+	"/:BusinessUnitId/clientservicerates/",
+	authController.ValidateToken,
+	marketSettingsController.CreateClientServiceRate
+);
+router.post(
+	"/:VerticalId/approvalsettings/",
+	authController.ValidateToken,
+	marketSettingsController.CreateApprovalSetting
+);
+router.post(
+	"/:ApprovalSettingId/approvercontacts/",
+	authController.ValidateToken,
+	marketSettingsController.CreateApproverContact
+);
+router.post(
+	"/:CountryId/requesttypes/",
+	authController.ValidateToken,
+	marketSettingsController.CreateRequestType
+);
+router.put(
+	"/approvalsettings/:ApprovalSettingId",
+	authController.ValidateToken,
+	marketSettingsController.UpdateApprovalSetting
+);
+router.delete(
+	"/approvalsettings/:ApprovalSettingId",
+	authController.ValidateToken,
+	marketSettingsController.DeleteApprovalSetting
+);
+router.put(
+	"/approvercontacts/:ApproverContactId",
+	authController.ValidateToken,
+	marketSettingsController.UpdateApproverContact
+);
+router.delete(
+	"/approvercontacts/:ApproverContactId",
+	authController.ValidateToken,
+	marketSettingsController.DeleteApproverContact
+);
+router.put(
+	"/clientservicerates/:ClientServiceRateId",
+	authController.ValidateToken,
+	marketSettingsController.UpdateClientServiceRate
+);
+router.delete(
+	"/clientservicerates/:ClientServiceRateId",
+	authController.ValidateToken,
+	marketSettingsController.DeleteClientServiceRate
+);
+router.put(
+	"/verticals/:VerticalId",
+	authController.ValidateToken,
+	marketSettingsController.UpdateVertical
+);
+router.delete(
+	"/verticals/:VerticalId",
+	authController.ValidateToken,
+	marketSettingsController.DeleteVertical
+);
+router.put(
+	"/businessunits/:BusinessUnitId",
+	authController.ValidateToken,
+	marketSettingsController.UpdateBusinessUnit
+);
+router.delete(
+	"/businessunits/:BusinessUnitId",
+	authController.ValidateToken,
+	marketSettingsController.DeleteBusinessUnit
+);
+router.put(
+	"/offices/:OfficeId",
+	authController.ValidateToken,
+	marketSettingsController.UpdateOffice
+);
+router.delete(
+	"/offices/:OfficeId",
+	authController.ValidateToken,
+	marketSettingsController.DeleteOffice
+);
+router.put(
+	"/requesttypes/:RequestTypeId",
+	authController.ValidateToken,
+	marketSettingsController.UpdateRequestType
+);
+router.delete(
+	"/requesttypes/:RequestTypeId",
+	authController.ValidateToken,
+	marketSettingsController.DeleteRequestType
+);
+router.post(
+	"/requesttypes/all",
+	authController.ValidateToken,
+	marketSettingsController.GetRequestTypesByMultipleCountry
+);
+module.exports = router;
+// module

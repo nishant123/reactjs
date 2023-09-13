@@ -1,0 +1,72 @@
+{
+	"title": "",
+	"bands": ["Executive Director", "Director", "Associate Director", "Senior Manager", "Manager", "Senior Executive", "Executive", "Data Science"],
+	"properties": {
+		"Proposal": {
+			"title": "Proposal Quote/ Development",
+			"type": "number",
+			"description": "e.g. Proposal/ project admin e.g. SF, contract/ SOW, signing uploading etc."
+		},
+		"ResearchDesign": {
+			"title": "Research Design",
+			"type": "number",
+			"description": "e.g. Sampling framework, experimental design, modelling input etc."
+		},
+		"RecruitmentLiason": {
+			"title": "Recruitment Liaison",
+			"type": "number"
+		},
+		"InternalBriefing": {
+			"title": "Internal Briefing",
+			"type": "number"
+		},
+		"ClientMeetings": {
+			"title": "Client Liaison/ Client Meetings",
+			"type": "number"
+		},
+		"QuestionnaireGuide": {
+			"title": "Questionnaire/ Discussion and Recruitment Guide",
+			"type": "number",
+			"description": "e.g. Writing of Q, testing, changes, re-testing. Includes qualitative recruitment and discussion guides"
+		},
+		"PilotingPreTesting": {
+			"title": "Interviewing/ Pre-testing/ Piloting",
+			"type": "number",
+			"description": "e.g. Covers any pre-testing for quant. Also includes qualitative fieldwork including moderation"
+		},
+		"DeskResearch": {
+			"title": "Secondary/ Desk Research",
+			"type": "number",
+			"description": "(Includes Finalisation of Report Template, Topline Report, Final Report etc.)"
+		},
+		"CSPM": {
+			"title": "CS Project Management",
+			"type": "number",
+			"description": "e.g. All project related management e.g. holecount checks, invites for client sample, sample matrix, weighting"
+		},
+		"DataAnalysis": {
+			"title": "Data Analysis",
+			"type": "number",
+			"description": "e.g. Tabspecs, data table checking and report data analysis. Also for Qualitative"
+		},
+		"ReportPrep": {
+			"title": "Presentation/ Workshops",
+			"type": "number",
+			"description": "e.g. Report template, charting, chart checking, report writing, topline summary, final report etc. Presentation preparation"
+		},
+		"Presentation": {
+			"title": "Presentation",
+			"type": "number"
+		},
+		"Consulting": {
+			"title": "Consulting",
+			"type": "number",
+			"description": "e.g. Consulting and on-site time"
+		},
+		"Other": {
+			"title": "Other",
+			"type": "number",
+			"description": "e.g. Can include travel time"
+		}
+	}
+}

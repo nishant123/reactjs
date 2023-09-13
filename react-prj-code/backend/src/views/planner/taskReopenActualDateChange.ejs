@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<style>
+    table {
+        border: 1px solid !important;
+        border-collapse: collapse !important;
+    }
+
+    td,
+    th {
+        padding: 5px;
+        border-collapse: collapse !important;
+        border: 1px solid !important;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+</style>
+
+<body style="text-align: left;">
+    <table style="border-spacing: 0;width: 50rem;">
+        <tr style="height:56pt">
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);padding:5pt;overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;text-align:center;margin-top:0pt;margin-bottom:0pt"> <span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:54px;height:54px"><img
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/EWN-Note.png"
+                                width="41" height="54" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:18pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;">You
+                        Have Been Added To The
+                        Following Project</span></p>
+            </td>
+            <td style="vertical-align:top;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:26px;height:37px"><img
+                                alt="N-Element-Tab-White_RGB.png"
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/N-Element-Tab-White_RGB.png"
+                                width="26" height="37" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+        </tr>
+    </table>
+    <div style="width: 50rem;">
+        <p style="font-size: 18pt;font-family: Arial;color: rgb(0,0,0);font-weight: 700;">
+            Task Reopened Notification</p>
+
+        <p><strong>Dear teams,</strong><br><br>
+            The following activity date(s) has been changed, please find details below.</p>
+
+    </div>
+    <div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;">
+            <h3 colspan="12" style="text-transform:uppercase;">
+                Project Details
+            </h3>
+            <table style="background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+                <tbody>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project Name</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ProjectName %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project ID</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ProjectId %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Methodology</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+
+                            <%= data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].Label? data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].Label : null%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Current Wave</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%= wave%></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">FW Start Date</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= FWStart%></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">FW End Date</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= FWEnd%></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;">
+                <h3 colspan="12" style="text-transform:uppercase;">
+                    Activity Details</h3>
+                <table
+                    style="background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+                    <thead>
+                        <tr>
+                            <th>Activity Name</th>
+                            <th>Owner</th>
+                            <th>Planned Date</th>
+                            <th>Previous Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+
+                            <%= task? task.title : null %>
+                        </td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+
+                            <%= task? task.Role : null  %>
+                        </td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+
+                            <%= currentDate %>
+                        </td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+
+                            <%= previousDate %>
+                        </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br>
+            <div style="background-color:#e0e0e0; margin-bottom:10px;width: 30rem;padding: 10px;"
+                class="project-details">
+                <h3 colspan="12" style="text-transform:uppercase;">
+                    Links
+                </h3>
+            </div>
+            <p>
+                Please access <a
+                    href="https://prod-sp-frontend-dot-nlsn-buyci-workflowtool-dev.ts.r.appspot.com">projects
+                    dashboard</a> to view detailed project specifications.
+            </p>
+            <hr />
+        </div>
+</body>
+
+</html>

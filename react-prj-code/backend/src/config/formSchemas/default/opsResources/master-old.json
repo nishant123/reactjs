@@ -1,0 +1,106 @@
+{
+  "numberOfQuestionnaires": {
+    "title": "Number Of Questionnaires",
+    "type": "integer",
+    "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+    "isNewSection": true,
+    "sectionTitle": "Questionnaire Design"
+  },
+  "numberOfQuestions": {
+    "title": "Number Of Questions",
+    "type": "integer"
+  },
+  "numberOfOpenEnded": {
+    "title": "Number Of Open Ended",
+    "type": "integer"
+  },
+  "numberOfSemiOpenEnded": {
+    "title": "Number Of Semi Open Ended",
+    "type": "integer"
+  },
+  "anyStimulus": {
+    "title": "Any stimulus (e.g. images/concept boards, etc.)",
+    "widgetType": "textarea",
+    "type": "string"
+  },
+  "percentageExpectedChange": {
+    "title": "% expected change in questionnaire in each wave (if Multi Wave)",
+    "type": "string",
+    "enum": ["0-10% Change", "11-30% Change", "31-60% Change", ">60% Change"]
+  },
+  "translationRequired": {
+    "title": "Translation Required",
+    "type": "string",
+    "enum": ["Yes", "No"],
+    "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+    "isNewSection": true,
+    "sectionTitle": "Translation"
+  },
+  "translationLanguages": {
+    "title": "Translation Languages",
+    "widgetType": "textarea",
+    "type": "string"
+  },
+  "verbatimTranslationRequired": {
+    "title": "Verbatim Translation Required",
+    "type": "string",
+    "enum": ["Yes", "No"]
+  },
+  "codingRequired": {
+    "title": "Coding Required",
+    "type": "string",
+    "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+    "isNewSection": true,
+    "sectionTitle": "Coding",
+    "enum": ["Yes", "No"]
+  },
+  "numberOfOpenEndedToCode": {
+    "title": "Number Of Open Ended To Be Coded",
+    "type": "integer"
+  },
+  "numberOfSemiOpenEndedToCode": {
+    "title": "Number Of Semi Open Ended To Be Coded",
+    "type": "integer"
+  },
+  "deliverableTypes": {
+    "title": "Deliverable Types",
+    "type": "array",
+    "items": {
+      "type": "string",
+      "enum": [
+        "Main Deliverables",
+        "CE + OE Tables",
+        "CE Tables",
+        "Interim Tables"
+      ]
+    },
+    "uniqueItems": true,
+    "isMulti": true,
+    "widgetType": "multiselectdropdown",
+    "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+    "isNewSection": true,
+    "sectionTitle": "SetUp and Delivery"
+  },
+  "statisticalAnalysisComments": {
+    "title": "Statistical Analysis Comments",
+    "type": "string"
+  },
+  "qualityControl": {
+    "title": "Quality Control",
+    "type": "string",
+    "enum": [
+      "No QC",
+      "Standard QC(Check Specification Sheet for details of standard backcheck)",
+      "Non-standard QC(Specify %)"
+    ]
+  },
+  "qualityControlComments": {
+    "title": "Quality Control Comments",
+    "type": "string"
+  },
+  "clientSamplesAfterFW": {
+    "title": "Client Samples After Field Work",
+    "type": "string",
+    "enum": ["Destroyed by Nielsen", "Returned to Client", "No Samples"]
+  }
+}

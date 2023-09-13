@@ -1,0 +1,341 @@
+[
+  {
+    "title": "FIELD COSTS",
+    "properties": {
+      "InterviewingCostQNR1": {
+        "title": "Interviewing Cost for QNR/Recuitment/Placement QNR(1)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "InterviewingCostQNR2": {
+        "title": "Interviewing Cost for QNR/Recuitment/Placement QNR(2)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "InterviewingCostQNR3": {
+        "title": "Interviewing Cost for QNR/Recuitment/Placement QNR(3)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "FieldworkPaymentInterviewerSupervisors": {
+        "title": "Fieldwork - Payment to Interviewer and Supervisors",
+        "type": "number",
+        "isMultiCountry": true
+      },
+      "PaymentsSupervisors": {
+        "title": "Payments to Supervisors (incl. training, accompanying, editing)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "OutsourcedVendorDataCollection": {
+        "title": "Outsourced Vendor Data collection with QC (External)",
+        "type": "number"
+      },
+      "FieldTravelStaySupervisorInterviewerMC": {
+        "title": "Field Travel & Stay cost for outstation/upcountry location (Supervisor & Interviewer)",
+        "type": "number",
+        "isMultiCountry": true
+      },
+      "FieldTravelStaySupervisor": {
+        "title": "Field Travel & Stay cost for outstation/upcountry location (Supervisor)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "FieldTravelStayInterviewer": {
+        "title": "Field Travel & Stay cost for outstation/upcountry location (Interviewer)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "FieldTravelCostCarHireTaxiPublicTransport": {
+        "title": "Field Travel Cost - Car Hire/Taxi/Public Transport - e.g Client Visit, Backchecks..etc",
+        "type": "number"
+      },
+      "FieldTravelStayManagersExecutives": {
+        "title": "Field Travel & Stay cost for outstation/upcountrylocation - Managers/Executives  (Ops FTE)",
+        "type": "number"
+      },
+      "QCPaymentPartTimers": {
+        "title": "QC - Payment to part-timers",
+        "type": "number"
+      },
+      "Insurance": {
+        "title": "Insurance",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "IncentivesRespondents": {
+        "title": "Incentives to respondents",
+        "type": "number"
+      },
+      "IncentivesOverRecruitment": {
+        "title": "Incentives/gifts for over-recruitment",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "DeskResearchSupport": {
+        "title": "Desk Research Support",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "BufferAdditionalCostExtraOnlineCompletes": {
+        "title": "Buffer (Additional cost for extra Online completes)",
+        "type": "number"
+      },
+      "FieldworkTeamAdminCost": {
+        "title": "Admin cost of FW team. Eg: Q're printing / 3G sim",
+        "type": "number"
+      },
+      "OtherFieldCost1": {
+        "title": "Other Field Cost - 1",
+        "type": "number"
+      },
+      "OtherFieldCost2": {
+        "title": "Other Field Cost - 2",
+        "type": "number"
+      },
+      "OtherFieldCost3": {
+        "title": "Other Field Cost - 3",
+        "type": "number"
+      }
+    }
+  },
+  {
+    "title": "SET-UP & DELIVERY COSTS",
+    "properties": {
+      "ProgrammingCosts": {
+        "title": "Programming/Scripting Costs (ConfirmIT, STG, Decipher) (External)",
+        "type": "number"
+      },
+      "CostCompletedSample": {
+        "title": "Cost per each completed samples (in Total cost)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "DataEntryCosts": {
+        "title": "Data Entry/Punching/Typing (External)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "DataProcessingCosts": {
+        "title": "Data Processing/Advanced Analysis (External)",
+        "type": "number"
+      },
+      "CodingCosts": {
+        "title": "Coding (External)",
+        "type": "number"
+      },
+      "VerbatimTypingCosts": {
+        "title": "Verbatim Typing (External)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "ChartingCosts": {
+        "title": "Charting costs (External)",
+        "type": "number"
+      },
+      "EquipmentCosts": {
+        "title": "Equipment Rental & License",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "TranscriptionCosts": {
+        "title": "Full transcripts (QUAL)",
+        "type": "number"
+      },
+      "HostingCosts": {
+        "title": "Hosting",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "OtherSUDCost1": {
+        "title": "Other Set-up & Delivery Cost - 1",
+        "type": "number"
+      },
+      "OtherSUDCost2": {
+        "title": "Other Set-up & Delivery Cost - 2",
+        "type": "number"
+      },
+      "OtherSUDCost3": {
+        "title": "Other Set-up & Delivery Cost - 3",
+        "type": "number"
+      }
+    }
+  },
+  {
+    "title": "TRANSLATION COSTS",
+    "properties": {
+      "QuestionnaireTranslationCosts": {
+        "title": "Translation (Questionnaire, Briefing note, Showcard, etc.) - External Vendor",
+        "type": "number"
+      },
+      "VerbatimTranslationCosts": {
+        "title": "Translation (Verbatims) - External Vendor",
+        "type": "number"
+      },
+      "TranscriptsTranslationCosts": {
+        "title": "Translation Transcripts (QUAL) - External Vendor",
+        "type": "number"
+      },
+      "SimulatenousTranslationCosts": {
+        "title": "Simultaneous Translation (QUAL) - External Vendor",
+        "type": "number"
+      },
+      "CopyPasteTranslationCosts": {
+        "title": "Copy pasting (applicable to Client review translation)",
+        "type": "number"
+      },
+      "OtherTranslationCosts1": {
+        "title": "Other Translation Cost - 1",
+        "type": "number"
+      },
+      "OtherTranslationCosts2": {
+        "title": "Other Translation Cost - 2",
+        "type": "number"
+      },
+      "OtherTranslationCosts3": {
+        "title": "Other Translation Cost - 3",
+        "type": "number"
+      }
+    }
+  },
+  {
+    "title": "OTHERS",
+    "properties": {
+      "VenueHire": {
+        "title": "Venue Hire Charges (for Central Location Test/Clinics, Qual...)",
+        "type": "number"
+      },
+      "EquipmentCost": {
+        "title": "Equipment Cost (CCTV, Devices, Digital Solutions, Qual...)",
+        "type": "number"
+      },
+      "MealAndOtherAllowance": {
+        "title": "Meals or other allowance",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "SamplesVideoAudio": {
+        "title": "Samples/video/audio tapes/batteries etc.",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "PrintingStationaryCosts": {
+        "title": "Printing/Stationaries costs",
+        "type": "number"
+      },
+      "FreightShipping": { "title": "Freight/Shipping", "type": "number" },
+      "TapesToClient": { "title": "Tapes to Client (QUAL)", "type": "number" },
+      "Moderation": {
+        "title": "Moderation (QUAL) - Done by Freelancers/Vendor",
+        "type": "number"
+      },
+      "TelephoneCellularData": {
+        "title": "Telephone & Cellular Data Cost",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "OtherGeneralExpenses": {
+        "title": "Other general expenses (eg. Refreshments/Respondent travel..etc)",
+        "type": "number"
+      },
+      "OtherOtherCosts1": {
+        "title": "Other Costs - SPECIFY: ",
+        "type": "number"
+      },
+      "OtherOtherCosts2": {
+        "title": "Other Costs - SPECIFY: ",
+        "type": "number"
+      },
+      "OtherOtherCosts3": {
+        "title": "Other Costs - SPECIFY: ",
+        "type": "number"
+      }
+    }
+  },
+  {
+    "title": "CS OOP",
+    "properties": {
+      "TravelAndStay": {
+        "title": "CS Travel & Stay costs for outstation location (including transportation costs) - CS ONLY",
+        "type": "number"
+      },
+      "OutsourcedServices": {
+        "title": "CS Outsourced Services (Consultancy/Report Writing..etc) - CS ONLY",
+        "type": "number"
+      },
+      "CSOtherCosts1": {
+        "title": "CS Other general expenses - SPECIFY:",
+        "type": "number"
+      },
+      "CSOtherCosts2": {
+        "title": "CS Other general expenses - SPECIFY:",
+        "type": "number"
+      },
+      "CSOtherCosts3": {
+        "title": "CS Other general expenses - SPECIFY:",
+        "type": "number"
+      }
+    }
+  },
+  {
+    "title": "FIELD TIME COSTS",
+    "properties": {
+      "DataCollectionCosts": {
+        "title": "Data Collection/QC (Internal Ops time costs)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "FieldTimeOtherCosts1": {
+        "title": "Others Ops Time Cost - SPECIFY:",
+        "type": "number",
+        "isMultiCountry": false
+      }
+    }
+  },
+  {
+    "title": "SET-UP AND DELIVERY TIME COSTS",
+    "properties": {
+      "ProgrammingCosts": {
+        "title": "Programming/Scripting (Internal Ops time costs)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "DPCACosts": {
+        "title": "Data Processing/Coding/Charting/Advanced Analysis (Internal Ops time costs) *Same Qnr for Main & Booster",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "PMCosts": {
+        "title": "Project Management costs (Internal Ops time costs)",
+        "type": "number",
+        "isMultiCountry": false
+      },
+      "OpsTimeOtherCosts": {
+        "title": "Others Ops Time Cost - SPECIFY: ",
+        "type": "number",
+        "isMultiCountry": false
+      }
+    }
+  },
+  {
+    "title": "CS TIME COSTS",
+    "properties": {
+      "IntCommQuestionnaireReview": {
+        "title": "Questionnaire Review/Inputs (Internal CS time cost)",
+        "type": "number"
+      },
+      "IntCommInsightGeneration": {
+        "title": "Insight Generation/Topline or Full Report Writing  (Internal CS time costs)",
+        "type": "number"
+      },
+      "IntCommModeration": {
+        "title": "Moderation (QUAL) - Done by Local CS",
+        "type": "number"
+      },
+      "IntCommOtherCSTimeCost": {
+        "title": "Others CS Time Cost - SPECIFY: ",
+        "type": "number"
+      }
+    }
+  }
+]

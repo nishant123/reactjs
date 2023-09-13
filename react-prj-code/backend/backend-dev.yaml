@@ -1,0 +1,33 @@
+runtime: nodejs12 # or nodejs10
+
+service: dev-backend #dev-sp-backend
+instance_class: F4 #increased size to prevent issues. Previously F1 - smallest instance 256MB 600Mhz Automatic Scaling
+
+#ENV
+env_variables:
+  JWT_SECRET: Cust0m!s3d!nt3ll!g3nce
+  PASSWORD_SALTROUNDS: 10
+  MAX_FAILED_LOGIN_ATTEMPTS: 10
+  DB_NAME_DEV: CIC_v2_Dev
+  DB_NAME_SANDBOX: CIC_v2_Dev
+  DB_NAME_PROD: CIC_v2_Dev
+  DB_USER: cic_v2_backend
+  DB_PASS: password
+  DB_CONNECTION_NAME: /cloudsql/nlsn-buyci-workflowtool-dev:us-central1:ci-global-workflow-tool
+  NODE_ENV: production
+  GOOGLE_APPLICATION_CREDENTIALS: nlsn-buyci-workflowtool-dev-d163dccd3e90.json
+  SENDGRID_API_KEY: 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
+  PROD_URL: https://dev-frontend-dot-nlsn-buyci-workflowtool-dev.ts.r.appspot.com/
+
+#  BUCKET_NAME: "example-gcs-bucket"
+
+beta_settings:
+  cloud_sql_instances: nlsn-buyci-workflowtool-dev:us-central1:ci-global-workflow-tool
+#handlers:
+#  - url: /stylesheets
+#    static_dir: stylesheets
+#
+#  - url: /.*
+#    secure: always
+#    redirect_http_response_code: 301
+#    script: auto

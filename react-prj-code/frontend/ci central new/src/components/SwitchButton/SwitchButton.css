@@ -1,0 +1,37 @@
+.SwitchButton{
+    width: inherit;
+    display: flex;
+    flex-flow: row;
+    border: 1px solid #ced4da;
+    border-radius: 0.2rem;
+    z-index: 0;
+}
+
+.buttonStyle{
+    height: 25px;
+    min-width: 50px;
+    padding: 0 15px;
+    border: 0;
+    outline: none;
+    background-color: white;
+    color: black;
+    border-radius: 0rem;
+    z-index: 101;
+    font-size: 0.7rem;
+}
+
+.buttonStyle:focus,
+.buttonStyle:hover,
+.buttonStyle:active{
+    border: 0;
+    outline: none;
+}
+
+.SwitchButton .active{
+    background-color: #00adef;
+    box-shadow: 0px 0 3px #000000;
+    border: 0;
+    border-radius: 0rem;
+    color: white;
+    z-index: 100;
+}

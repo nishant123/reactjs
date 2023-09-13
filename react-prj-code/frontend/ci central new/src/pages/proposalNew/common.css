@@ -1,0 +1,132 @@
+﻿.saving-btn {
+    width: 18px;
+    height: 18px;
+    margin-left: 10px;
+    color: darkblue;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.react-select__menu {
+    color: black !important;
+    z-index: 99999999;
+}
+
+.react-bootstrap-table table {
+    table-layout: auto;
+}
+
+th {
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.card-body {
+    padding: 1rem !important;
+}
+
+.vendorsBid th {
+    font-size: 13px !important;
+    color: black !important;
+    border-bottom: none !important;
+    border-top: none !important;
+}
+
+.vendorsBid td {
+    font-size: 12px !important;
+    color: black !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    vertical-align: bottom !important;
+}
+
+.vendor-selected {
+    background-color: lime;
+    color: white !important;
+}
+
+.tab-methodology .tab-content {
+    background-color: floralwhite !important;
+}
+
+.tab-methodology-vendor .tab-content {
+    background-color: white !important;
+}
+
+.nav-tabs {
+    background-color: #bbbbbb94;
+}
+
+.tab .nav-tabs .nav-link.active {
+    background: #00ACEE;
+    font-weight: bolder !important;
+    font-size: 16px;
+    color: black;
+}
+
+.tab-content {
+    background-color: aliceblue !important;
+}
+
+.btn-chat {
+    position: fixed;
+    top: 70px;
+    right: 0px;
+}
+
+.modal-body {
+    max-height: 400px;
+    min-height: 400px;
+    overflow-y: scroll !important;
+    background-color: antiquewhite;
+}
+
+.m-3 {
+    margin: 0rem !important;
+}
+
+.hover-tr:hover {
+    cursor: pointer !important;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.content {
+    padding: 1rem 1rem 1rem !important;
+}
+
+.card {
+    margin-bottom: 1rem !important;
+}
+
+.tabContentCostSummary .tab-content {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tabContentCostSummary .col-md-12 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.tabContentCostSummary .table th, .table td {
+    padding: 0.5rem !important;
+}
+
+.modelCostSummary .tab-content {
+    min-height: 260px !important;
+    max-height: 260px !important;
+    overflow: auto;
+}
+
+.modelSelectVendors .modal-body {
+    overflow-y: hidden !important;
+}
+
+.selectedVendors .card-body {
+    min-height: 380px;
+    max-height: 400px;
+    overflow: auto;
+}

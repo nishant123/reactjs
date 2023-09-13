@@ -1,0 +1,35 @@
+.PushButton{
+    width: inherit;
+    display: flex;
+    flex-flow: row;
+    border: 1px solid #ced4da;
+    border-radius: 0.2rem;
+    z-index: 0;
+}
+
+.thisButtonStyle{
+    height: 25px;
+    min-width: 60px;
+    padding: 0 15px;
+    border: 0;
+    outline: none;
+    background-color: white;
+    color: black;
+    border-radius: 0rem;
+    font-size: 0.7rem;
+}
+
+.thisButtonStyle:focus,
+.thisButtonStyle:hover,
+.thisButtonStyle:active{
+    border: 0;
+    outline: none;
+}
+
+.thisButtonStyle.active{
+    background-color: #00adef;
+    box-shadow: 0px 0 3px #000000;
+    border: 0;
+    border-radius: 0rem;
+    color: white;
+}

@@ -1,0 +1,69 @@
+runtime: nodejs12 # or nodejs10
+
+service: prod-frontend
+
+instance_class: F4 #increased size to prevent issues. Previously F1 - smallest instance 256MB 600Mhz Automatic Scaling
+
+env_variables:
+  DB_NAME: CIC_v2_Dev
+  DB_USER: cic_v2_backend
+  DB_PASS: password
+  DB_CONNECTION_NAME: /cloudsql/nlsn-buyci-workflowtool-dev:us-central1:ci-global-workflow-tool
+  NODE_ENV: production
+  GOOGLE_APPLICATION_CREDENTIALS: nlsn-buyci-workflowtool-dev-d163dccd3e90.json
+  REACT_APP_API_BASE_URL: https://prod-backend-dot-nlsn-buyci-workflowtool-dev.ts.r.appspot.com/
+#  BUCKET_NAME: "example-gcs-bucket"
+
+beta_settings:
+  cloud_sql_instances: nlsn-buyci-workflowtool-dev:us-central1:ci-global-workflow-tool
+
+# handlers:
+#   - url: /static/js/(.*)
+#     static_files: build/static/js/\1
+#     upload: build/static/js/(.*)
+#   - url: /static/css/(.*)
+#     static_files: build/static/css/\1
+#     upload: build/static/css/(.*)
+#   - url: /static/media/(.*)
+#     static_files: build/static/media/\1
+#     upload: build/static/media/(.*)
+#   - url: /(.*\.(json|ico))$
+#     static_files: build/\1
+#     upload: build/.*\.(json|ico)$
+#   - url: /
+#     static_files: build/index.html
+#     upload: build/index.html
+#   - url: /.*
+#     static_files: build/index.html
+#     upload: build/index.html
+
+# [START handlers]
+handlers:
+  - url: "/service-worker.js"
+    secure: always
+    static_files: build/service-worker.js
+    upload: build/service-worker.js
+    mime_type: application/javascript
+
+  - url: /(precache-manifest.*)$
+    secure: always
+    mime_type: application/javascript
+    static_files: build/\1
+    upload: build/(precache-manifest.*)$
+
+  - url: /(.*\.js)$
+    secure: always
+    static_files: build/\1
+    upload: build/.*\.js$
+    mime_type: application/javascript
+
+  - url: /(.*\.(css|map|png|jpg|svg|ico|json|txt|woff))$
+    secure: always
+    static_files: build/\1
+    upload: build/.*\.(css|map|png|jpg|svg|ico|json|txt|woff)$
+
+  - url: "/(.*)"
+    secure: always
+    static_files: build/index.html
+    upload: build/index.html
+# [END handlers]

@@ -1,0 +1,624 @@
+{
+	"title": "Operations Resources",
+	"properties": {
+		"surveyProgrammingRequired": {
+			"title": "Survey Programming Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Survey Programming"
+		},
+		"dataProcessingRequired": {
+			"title": "Data Processing Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Data Processing"
+		},
+		"chartingRequired": {
+			"title": "Charting Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Charting"
+		},
+		"dashboarding": {
+			"title": "Dashboarding Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Dashboarding"
+		},
+		"translations": {
+			"title": "Translations Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Translations"
+		},
+		"dataScienceRequired": {
+			"title": "Data Science / Measurement Science Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Data Science"
+		},
+		"verbatimCoding": {
+			"title": "Verbatim Coding Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Verbatim Coding"
+		},
+		"textAnalytics": {
+			"title": "Text Analytics Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Text Analytics"
+		},
+		"dataEntryRequired": {
+			"title": "Data Entry Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Data Entry"
+		},
+		"otherDataPreparationAssistance": {
+			"title": "Other Data Preparation Assistance Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Other Data Preparation Assistance"
+		},
+		"additionalOperationsSupport": {
+			"title": "Additional Operations Support Required",
+			"type": "boolean",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Additional Operations Support"
+		},
+		"dataCollectionPlatform": {
+			"title": "Data Collection Platform",
+			"type": "string",
+			"enum": ["Confirmit", "Decipher", "SurveyToGo", "Others"],
+			"uniqueItems": true,
+			"isMulti": true,
+			"widgetType": "multiselectdropdown",
+			"classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+			"isNewSection": true,
+			"sectionTitle": "Platform and Sample Info"
+		},
+		"dataCollectionResource": {
+			"title": "Data Collection Resource",
+			"type": "string",
+			"enum": ["Internal", "External", "Both"]
+		},
+		"dataCollectionInvolveFieldingMarket": {
+			"title": "Involve Fielding Market",
+			"type": "boolean",
+			"isMultiCountry": true
+		},
+		"sampleProvider": {
+			"title": "Sample Provider",
+			"type": "string",
+			"optionsLabel": "VendorListOptions",
+			"isCreatable": true,
+			"uniqueItems": true,
+			"isMulti": true,
+			"widgetType": "multiselectdropdown"
+		}
+	},
+	"dependencies": {
+		"surveyProgrammingRequired": {
+			"oneOf": [
+				{
+					"properties": {
+						"surveyProgrammingRequired": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"surveyProgrammingRequired": {
+							"enum": [true]
+						},
+						"surveyProgrammingComplexity": {
+							"title": "Questionnaire Complexity",
+							"type": "string",
+							"optionsLabel": "QuestionnaireComplexityOptions",
+							"widgetType": "multiselectdropdown"
+						},
+						"surveyProgrammingResource": {
+							"title": "Survey Programming Resource",
+							"type": "string",
+							"enum": ["Internal", "External"]
+						},
+						"surveyProgrammingNumberOfQuestions": {
+							"title": "Number Of Questions",
+							"type": "string",
+							"enum": ["Up to 120", "121 to 240", "241 to 400"]
+						},
+						"surveyProgrammingPercentageChangePerWave": {
+							"title": "Approx Percentage Change - Each Wave",
+							"type": "string",
+							"enum": ["0 to 10%", "11 to 30%", "31 to 60%", "> 60%"]
+						},
+						"surveyProgrammingInvolveFieldingMarket": {
+							"title": "Involve Fielding Market",
+							"type": "boolean",
+							"isMultiCountry": true
+						}
+					}
+				}
+			]
+		},
+		"surveyProgrammingResource": {
+			"oneOf": [
+				{
+					"properties": {
+						"surveyProgrammingResource": {
+							"enum": ["Internal"]
+						}
+					}
+				},
+				{
+					"properties": {
+						"surveyProgrammingResource": {
+							"enum": ["External"]
+						},
+						"surveyProgrammingVendorName": {
+							"title": "Programming Vendor Name",
+							"type": "string",
+							"optionsLabel": "VendorListOptions",
+							"isCreatable": true,
+							"uniqueItems": true,
+							"isMulti": true,
+							"widgetType": "multiselectdropdown"
+						}
+					}
+				}
+			]
+		},
+		"dataProcessingRequired": {
+			"oneOf": [
+				{
+					"properties": {
+						"dataProcessingRequired": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"dataProcessingRequired": {
+							"enum": [true]
+						},
+						"dataProcessingComplexity": {
+							"title": "Data Processing Complexity",
+							"type": "string",
+							"optionsLabel": "DataProcessingComplexityOptions",
+							"widgetType": "multiselectdropdown"
+						},
+						"dataProcessingResource": {
+							"title": "Data Processing Resource",
+							"type": "string",
+							"enum": ["Internal", "External"]
+						}
+					}
+				}
+			]
+		},
+		"dataProcessingResource": {
+			"oneOf": [
+				{
+					"properties": {
+						"dataProcessingResource": {
+							"enum": ["Internal"]
+						}
+					}
+				},
+				{
+					"properties": {
+						"dataProcessingResource": {
+							"enum": ["External"]
+						},
+						"dataProcessingVendorName": {
+							"title": "Data Processing Vendor Name",
+							"type": "string",
+							"optionsLabel": "VendorListOptions",
+							"isCreatable": true,
+							"uniqueItems": true,
+							"isMulti": true,
+							"widgetType": "multiselectdropdown"
+						}
+					}
+				}
+			]
+		},
+		"chartingRequired": {
+			"oneOf": [
+				{
+					"properties": {
+						"chartingRequired": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"chartingRequired": {
+							"enum": [true]
+						},
+						"chartingComplexity": {
+							"title": "Charting Complexity",
+							"type": "string",
+							"optionsLabel": "ChartingComplexityOptions",
+							"widgetType": "multiselectdropdown"
+						},
+						"chartingResource": {
+							"title": "Charting Resource",
+							"type": "string",
+							"enum": ["Internal", "External"]
+						},
+						"chartingNumber": {
+							"title": "Number of Charts",
+							"type": "integer",
+							"minimum": 0
+						}
+					}
+				}
+			]
+		},
+		"chartingResource": {
+			"oneOf": [
+				{
+					"properties": {
+						"chartingResource": {
+							"enum": ["Internal"]
+						}
+					}
+				},
+				{
+					"properties": {
+						"chartingResource": {
+							"enum": ["External"]
+						},
+						"chartingVendorName": {
+							"title": "Charting Vendor Name",
+							"type": "string",
+							"optionsLabel": "VendorListOptions",
+							"isCreatable": true,
+							"uniqueItems": true,
+							"isMulti": true,
+							"widgetType": "multiselectdropdown"
+						}
+					}
+				}
+			]
+		},
+		"dashboarding": {
+			"oneOf": [
+				{
+					"properties": {
+						"dashboarding": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"dashboarding": {
+							"enum": [true]
+						},
+						"dashboardingResource": {
+							"title": "Dashboarding Resource",
+							"type": "string",
+							"enum": ["Internal", "External"]
+						}
+					}
+				}
+			]
+		},
+		"translations": {
+			"oneOf": [
+				{
+					"properties": {
+						"translations": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"translations": {
+							"enum": [true]
+						},
+						"translationsResource": {
+							"title": "Translations Resource",
+							"type": "string",
+							"enum": ["Internal", "External"]
+						},
+						"translationsLanguages": {
+							"title": "Language(s) Required",
+							"type": "array",
+							"isMulti": true,
+							"widgetType": "multiselectdropdown",
+							"uniqueItems": true,
+							"optionsLabel": "LanguageOptions",
+							"isCreatable": true
+						}
+					}
+				}
+			]
+		},
+		"dataScienceRequired": {
+			"oneOf": [
+				{
+					"properties": {
+						"dataScienceRequired": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"dataScienceRequired": {
+							"enum": [true]
+						},
+						"dataScienceResource": {
+							"title": "Data Science / Measurement Science",
+							"type": "string",
+							"enum": ["Internal - Operations", "Internal - Commercial", "External"]
+						}
+					}
+				}
+			]
+		},
+		"verbatimCoding": {
+			"oneOf": [
+				{
+					"properties": {
+						"verbatimCoding": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"verbatimCoding": {
+							"enum": [true]
+						},
+						"verbatimCodingResource": {
+							"title": "Verbatim Coding Resource",
+							"type": "string",
+							"enum": ["Internal", "External"]
+						},
+						"verbatimCodingFullOpenEnded": {
+							"title": "Full Open Ended Questions",
+							"type": "integer",
+							"minimum": 0
+						},
+						"verbatimCodingOtherSpecify": {
+							"title": "Other Specify Questions (Semi-OE)",
+							"type": "integer",
+							"minimum": 0
+						}
+					}
+				}
+			]
+		},
+		"dataEntryRequired": {
+			"oneOf": [
+				{
+					"properties": {
+						"dataEntryRequired": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"dataEntryRequired": {
+							"enum": [true]
+						},
+						"dataEntryResource": {
+							"title": "Data Entry Resource",
+							"type": "string",
+							"enum": ["Internal", "External"]
+						},
+						"dataEntryNumberOfResponses": {
+							"title": "Number of Responses",
+							"type": "integer",
+							"minimum": 0
+						}
+					}
+				}
+			]
+		},
+		"dataScienceResource": {
+			"oneOf": [
+				{
+					"properties": {
+						"dataScienceResource": {
+							"enum": ["External", "Internal - Commercial"]
+						}
+					}
+				},
+				{
+					"properties": {
+						"dataScienceResource": {
+							"enum": ["Internal - Operations"]
+						},
+						"dataScienceHours": {
+							"title": "Number of Hours",
+							"type": "integer",
+							"minimum": 0
+						}
+					}
+				}
+			]
+		},
+		"additionalOperationsSupport": {
+			"oneOf": [
+				{
+					"properties": {
+						"additionalOperationsSupport": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"additionalOperationsSupport": {
+							"enum": [true]
+						},
+						"additionalOperationsSupportHours": {
+							"title": "Number of hours",
+							"type": "integer",
+							"minimum": 0
+						}
+					}
+				}
+			]
+		},
+		"dataCollectionResource": {
+			"oneOf": [
+				{
+					"properties": {
+						"dataCollectionResource": {
+							"enum": ["Internal"]
+						}
+					}
+				},
+				{
+					"properties": {
+						"dataCollectionResource": {
+							"enum": ["External"]
+						},
+						"dataCollectionVendorName": {
+							"title": "Data Collection Vendor Name",
+							"type": "string",
+							"optionsLabel": "VendorListOptions",
+							"isCreatable": true,
+							"uniqueItems": true,
+							"isMulti": true,
+							"widgetType": "multiselectdropdown"
+						}
+					}
+				}
+			]
+		},
+		"otherDataPreparationAssistance": {
+			"oneOf": [
+				{
+					"properties": {
+						"otherDataPreparationAssistance": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"otherDataPreparationAssistance": {
+							"enum": [true]
+						},
+						"otherDataPreparationAssistanceHours": {
+							"title": "Number of hours",
+							"type": "integer",
+							"minimum": 0
+						}
+					}
+				}
+			]
+		}
+	},
+	"required": [
+		"surveyProgrammingRequired",
+		"surveyProgrammingComplexity",
+		"surveyProgrammingResource",
+		"surveyProgrammingNumberOfQuestions",
+		"surveyProgrammingPercentageChangePerWave",
+		"surveyProgrammingInvolveFieldingMarket",
+		"surveyProgrammingVendorName",
+		"dataProcessingRequired",
+		"dataProcessingComplexity",
+		"dataProcessingResource",
+		"dataProcessingVendorName",
+		"chartingRequired",
+		"chartingComplexity",
+		"chartingResource",
+		"chartingNumber",
+		"chartingVendorName",
+		"dashboarding",
+		"dashboardingResource",
+		"translations",
+		"translationsResource",
+		"translationsLanguages",
+		"dataScienceRequired",
+		"dataScienceResource",
+		"dataScienceHours",
+		"verbatimCoding",
+		"verbatimCodingResource",
+		"verbatimCodingFullOpenEnded",
+		"verbatimCodingOtherSpecify",
+		"textAnalytics",
+		"dataEntryRequired",
+		"dataEntryResource",
+		"dataEntryNumberOfResponses",
+		"otherDataPreparationAssistance",
+		"otherDataPreparationAssistanceHours",
+		"additionalOperationsSupport",
+		"additionalOperationsSupportHours",
+		"dataCollectionPlatform",
+		"dataCollectionResource",
+		"dataCollectionVendorName",
+		"dataCollectionInvolveFieldingMarket",
+		"sampleProvider"
+	],
+	"order": [
+		"surveyProgrammingRequired",
+		"surveyProgrammingComplexity",
+		"surveyProgrammingResource",
+		"surveyProgrammingNumberOfQuestions",
+		"surveyProgrammingPercentageChangePerWave",
+		"surveyProgrammingInvolveFieldingMarket",
+		"surveyProgrammingVendorName",
+		"dataProcessingRequired",
+		"dataProcessingComplexity",
+		"dataProcessingResource",
+		"dataProcessingVendorName",
+		"chartingRequired",
+		"chartingComplexity",
+		"chartingResource",
+		"chartingNumber",
+		"chartingVendorName",
+		"dashboarding",
+		"dashboardingResource",
+		"translations",
+		"translationsResource",
+		"translationsLanguages",
+		"dataScienceRequired",
+		"dataScienceResource",
+		"dataScienceHours",
+		"verbatimCoding",
+		"verbatimCodingResource",
+		"verbatimCodingFullOpenEnded",
+		"verbatimCodingOtherSpecify",
+		"textAnalytics",
+		"dataEntryRequired",
+		"dataEntryResource",
+		"dataEntryNumberOfResponses",
+		"otherDataPreparationAssistance",
+		"otherDataPreparationAssistanceHours",
+		"additionalOperationsSupport",
+		"additionalOperationsSupportHours",
+		"dataCollectionPlatform",
+		"dataCollectionResource",
+		"dataCollectionVendorName",
+		"dataCollectionInvolveFieldingMarket",
+		"sampleProvider",
+		"*"
+	]
+}

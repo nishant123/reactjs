@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+</head>
+<style>
+	table {
+		border: 1px solid !important;
+		border-collapse: collapse !important;
+	}
+
+	td,
+	th {
+		padding: 5px;
+		border-collapse: collapse !important;
+		border: 1px solid !important;
+	}
+
+	.text-uppercase {
+		text-transform: uppercase;
+	}
+</style>
+
+<body style="text-align: left">
+	<table style="border-spacing: 0; width: 50rem">
+		<tr style="height: 56pt">
+			<td style="vertical-align: middle; background-color: rgb(178, 29, 172); padding: 5pt; overflow: hidden">
+				<p dir="ltr" style="line-height: 1.2; text-align: center; margin-top: 0pt; margin-bottom: 0pt">
+					<span
+						style="font-size: 11pt; font-family: Arial; color: rgb(255, 255, 255); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap"><span
+							style="border: none; display: inline-block; overflow: hidden; width: 54px; height: 54px"><img
+								src="https://storage.googleapis.com/workflow-tool-static-resources/EWN-Note.png"
+								width="41" height="54" style="margin-left: 0px; margin-top: 0px"
+								class="CToWUd" /></span></span>
+				</p>
+			</td>
+			<td style="vertical-align: middle; background-color: rgb(178, 29, 172); overflow: hidden">
+				<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt">
+					<span
+						style="font-size: 18pt; font-family: Arial; color: rgb(255, 255, 255); background-color: transparent; font-weight: 700; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline">SCHEDULE
+						UPDATE NOTIFICATION</span>
+				</p>
+			</td>
+			<td style="vertical-align: top; background-color: rgb(178, 29, 172); overflow: hidden">
+				<p dir="ltr" style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt">
+					<span
+						style="font-size: 11pt; font-family: Arial; color: rgb(255, 255, 255); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap"><span
+							style="border: none; display: inline-block; overflow: hidden; width: 26px; height: 37px"><img
+								alt="N-Element-Tab-White_RGB.png"
+								src="https://storage.googleapis.com/workflow-tool-static-resources/N-Element-Tab-White_RGB.png"
+								width="26" height="37" style="margin-left: 0px; margin-top: 0px"
+								class="CToWUd" /></span></span>
+				</p>
+			</td>
+		</tr>
+	</table>
+	<div style="width: 50rem">
+		<p style="font-family: Arial; color: #b21dac; font-size: 12pt">INTERNAL ONLY</p>
+		<p style="font-size: 18pt; font-family: Arial; color: rgb(0, 0, 0); font-weight: 700">SCHEDULE UPDATED</p>
+		<p>
+			Please be notified that the following project's schedule has been updated by
+			<a style="color: #15c" target="_blank" href="mailto:<%=ewnSender%>"><%=ewnSender%></a>
+		</p>
+		<p>Please access the <a target="_blank" style="color: #15c"
+				href="<%=process.env.PROD_URL%>summary/<%=wave.CostingProfile.id %>">cost summary</a> to view
+			detailed project specifications, costs and schedule.</p>
+	</div>
+	<div>
+		<div style="background-color: #e0e0e0; margin-bottom: 5px; width: 50rem; padding: 5px" class="project-details">
+			<h3 colspan="12" style="text-transform: uppercase">Project Details</h3>
+			<table
+				style="background-color: white !important; border: 1px solid; border-collapse: collapse; width: inherit">
+				<tbody>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Project Name</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%= wave.CostingProfile.Project.ProjectName %>
+							<%= wave.CostingProfile.IsTracker?"Wave #"+wave.WaveNumber:"" %></td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Project Number</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%= wave.CostingProfile.Project.ProjectId %></td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Primary Nielsen Contact
+							Email</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%= wave.CostingProfile.Project.ProposalOwnerEmail.value %></td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Syndicated Project</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=wave.CostingProfile.Project.IsSyndicated?"Yes":"No"%></td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Client Details</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<ul style="padding: 0;list-style:none;">
+								<%if(wave.CostingProfile.Project.ContractDetails){%>
+								<% wave.CostingProfile.Project.ContractDetails.forEach(function(item){ %>
+								<li style="margin:0;">
+									<%= item.AccountName %> <%if(item.OpportunityNumber) {%>
+																	 - (<%=item.OpportunityNumber%>) 
+																	<%} %> - <%=item.Probability  %><%="%"%> - <%=item.Stage %>
+								</li>
+								<% }) %>
+								<%}%>
+						</ul>
+								</td>
+						</tr>
+						<tr>
+							<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Commissioning Office</td>
+							<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+								<%=codeLabels.OfficeOptions.Label %>
+						</td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Business Unit</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%= codeLabels.BusinessUnitOptions.Label %></td>
+						</td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Tracker</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=wave.CostingProfile.IsTracker ? "Yes" : "No"%></td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Tracking Frequency</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=wave.CostingProfile.IsTracker ? codeLabels.TrackingFrequencyOptions.filter(frq => frq.Code == wave.CostingProfile.TrackingFrequency)[0].Label:"NA"%>
+						</td>
+					</tr>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">Total Waves</td>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=wave.CostingProfile.IsTracker ? wave.CostingProfile.NumberOfWaves:"NA"%></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="background-color: #e0e0e0; margin-bottom: 5px; width: 50rem; padding: 5px" class="schedule">
+			<h3 colspan="12" style="text-transform: uppercase">Latest Schedule</h3>
+			<table
+				style="background-color: white !important; border: 1px solid; border-collapse: collapse; width: inherit">
+				<tbody>
+					<tr>
+						<th style="border: 1px solid; border-collapse: collapse; padding: 5px"><%="Date Field Start"%>
+						</th>
+
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=!wave.DateFieldworkNA?new Date(wave.DateFieldStart).toDateString():"No Fieldwork Required"%>
+						</td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid; border-collapse: collapse; padding: 5px"><%="Date Field End"%>
+						</th>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=!wave.DateFieldworkNA?new Date(wave.DateFieldEnd).toDateString():"No Fieldwork Required"%>
+						</td>
+					</tr>
+					<tr>
+						<th style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%="Date Final Report Due to the Client"%></th>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=!wave.DateFinalReportNA?new Date(wave.DateFinalReport).toDateString():"No Final Reports Required"%>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div style="background-color: #e0e0e0; margin-bottom: 5px; width: 50rem; padding: 5px" class="schedule">
+			<h3 colspan="12" style="text-transform: uppercase">NOTES FOR FINANCE</h3>
+			<table
+				style="background-color: white !important; border: 1px solid; border-collapse: collapse; width: inherit">
+				<tbody>
+					<tr>
+						<td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+							<%=wave.NotesFinance ? wave.NotesFinance : "No additional notes were provided."%></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<hr />
+	</div>
+</body>
+
+</html>

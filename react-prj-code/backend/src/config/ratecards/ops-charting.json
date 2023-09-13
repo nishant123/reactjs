@@ -1,0 +1,1602 @@
+{
+  "AU": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1,
+      "Comments": "Lead"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 3,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 4.6,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "NZ": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1,
+      "Comments": "Lead"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 3,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 4.6,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "SG": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "AE": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "SA": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "OM": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "QA": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "KW": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "DE": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "HK": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1.2,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.4,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "CA": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "JP": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1,
+      "Comments": "Lead"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 3,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 4.6,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "PK": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "TW": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1.2,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "EG": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "LB": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "JO": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "MA": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "TN": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "DZ": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "ZA": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Emerging"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "PH": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "MM": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "MY": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "VN": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "IT": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 3,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 4.6,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "ES": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 3,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 4.6,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "PT": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 1,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 3,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 4.6,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "NL": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "MX": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "CO": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "PE": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "EC": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "CR": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "CL": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "AR": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "DO": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "SV": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "GT": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "HN": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "NI": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "PR": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "PA": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "UY": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "VE": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "BR": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0.6,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 2,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 2.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 70,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 5.5,
+      "Comments": ""
+    }
+  ],
+  "KE": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "NG": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "UG": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ],
+  "TZ": [
+    {
+      "Complexity": "S",
+      "CostPerSlide": 0,
+      "Comments": "Growth"
+    },
+    {
+      "Complexity": "M",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "C",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "EF",
+      "CostPerSlide": 0,
+      "Comments": "Check with TCS"
+    },
+    {
+      "Complexity": "RC",
+      "CostPerSlide": 0,
+      "Comments": ""
+    },
+    {
+      "Complexity": "BM",
+      "CostPerSlide": 0,
+      "Comments": ""
+    }
+  ]
+}

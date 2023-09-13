@@ -1,0 +1,55 @@
+/* .infoContainer{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.removeIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trashIcon:hover{
+    color: red;
+}
+
+.removeIcon{
+    width: 18px;
+}
+
+.removeIconShadow{
+    position: absolute;
+    display: none;
+}
+
+.removeIcon:hover ~ .removeIconShadow{
+    display: block;
+}
+
+.removeIconShadow:hover{
+    display: block;
+}
+
+.colStyle{
+    overflow-wrap: normal;
+    overflow: hidden;
+}
+
+.infoContainer label{
+    padding-right: 5px;
+}
+
+.UserDetails .card{
+    margin: 0;
+}
+
+/* .testing{
+    width: 300px;
+    height: 300px;
+    border: 1px solid;
+    position: absolute;
+    z-index: 1000;
+} */ 

@@ -1,0 +1,691 @@
+[
+  {
+    "title": "QUANT",
+    "properties": {
+      "INITIATION": {
+        "title": "INITIATION",
+        "properties": {
+          "ProjectCommissionedBookingForm": {
+            "title": "EWN: Project Commissioned",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "PPM": {
+            "title": "PPM",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FinalQnrSignOffbyClient": {
+            "title": "Final Qnr Sign Off by Client",
+            "default": false,
+            "access": "E2S,FM",
+            "Role": "E2S"
+          }
+        }
+      },
+      "BOOKING&TESTING": {
+        "title": "BOOKING & TESTING",
+        "properties": {
+          "ProgrammingBookingQnrSP": {
+            "title": "Programming (Booking & Qnr SP)",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "TranslationsBookingQnrTrsl": {
+            "title": "Translations (Booking & Qnr Trsl)",
+            "default": false,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "DPChartingBooking": {
+            "title": "DP & Charting Booking",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "ProtrackApprovalInContract": {
+            "title": "Protrack Approval (In Contract)",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "QnrTestlinkChecking": {
+            "title": "Qnr Test link Checking",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "TranslationLinkChecking": {
+            "title": "Translation Link Checking",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "QnrLinkDeliverytoOps": {
+            "title": "Qnr Link Delivery to Ops",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          }
+        }
+      },
+      "PLANNING&SETUP": {
+        "title": "PLANNING & SETUP",
+        "properties": {
+          "CashadvancerequestonConcur": {
+            "title": "Cash advance request on Concur",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "Vouchersrequesttofinance": {
+            "title": "Vouchers request to finance",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "Approvevouchersandcashadvance": {
+            "title": "Approve vouchers and cash advance",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "FinalFieldMaterialDelivery": {
+            "title": "Final Field Material Delivery",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FieldBriefing": {
+            "title": "Field Briefing",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          }
+        }
+      },
+      "EXECUTION": {
+        "title": "EXECUTION",
+        "properties": {
+          "FWStart": {
+            "title": "FW Start",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "FeedbackondatabasequalityCATI": {
+            "title": "Feedback on database quality (CATI)",
+            "default": false,
+            "access": "E2S,FM",
+            "Role": "E2S,FM"
+          },
+          "PISentry": {
+            "title": "PIS entry",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "DQAreview30": {
+            "title": "DQA review - 30%",
+            "default": false,
+            "access": "QC",
+            "Role": "QC"
+          },
+          "QC1streportoutonofFWDone": {
+            "title": "QC - 1st report out on 30% of FW Done",
+            "default": true,
+            "access": "QC",
+            "Role": "QC"
+          },
+          "DQAreview60": {
+            "title": "DQA review - 60%",
+            "default": false,
+            "access": "QC",
+            "Role": "QC"
+          },
+          "QC2ndreportoutonofFWDone": {
+            "title": "QC - 2nd report out on 60% of FW Done",
+            "default": true,
+            "access": "QC",
+            "Role": "QC"
+          },
+          "LiveMonitoring": {
+            "title": "Live Monitoring",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "TablesspecsdeliveryAP": {
+            "title": "Tables specs delivery (AP)",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "InterimDataDelivery": {
+            "title": "Interim Data Delivery",
+            "default": false,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "Chartingtemplate": {
+            "title": "Charting template",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FWEnd": {
+            "title": "FW End",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          }
+        }
+      },
+      "QCFINALREPORT": {
+        "title": "QC FINAL REPORT",
+        "properties": {
+          "QCfinalreportoutonofFWDone": {
+            "title": "QC - final report out on 100% of FW Done",
+            "default": true,
+            "access": "QC",
+            "Role": "QC"
+          }
+        }
+      },
+      "CLOSING": {
+        "title": "CLOSING",
+        "properties": {
+          "E2StoconfirmFWend": {
+            "title": "E2S to confirm FW end",
+            "default": true,
+            "access": "E2S,FM",
+            "Role": "E2S"
+          },
+          "ExpenseSubmission": {
+            "title": "Expense Submission",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "PISClosure": {
+            "title": "PIS Closure",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM,E2S"
+          },
+          "Paymentsheet": {
+            "title": "Payment sheet",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "FinalDataDelivery": {
+            "title": "Final Data Delivery",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "VerbatimCoding": {
+            "title": "Verbatim Coding",
+            "default": false,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "TablesDelivery": {
+            "title": "Tables Delivery",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "ChartingDelivery": {
+            "title": "Charting Delivery",
+            "default": false,
+            "access": "SUD",
+            "Role": "SUD"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "QUAL",
+    "properties": {
+      "INITIATION": {
+        "title": "INITIATION",
+        "properties": {
+          "ProjectCommissionedBookingForm": {
+            "title": "EWN: Project Commissioned",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          }
+        }
+      },
+      "BOOKING&TESTING": {
+        "title": "BOOKING & TESTING",
+        "properties": {
+          "CashAdvanceRequestacrossSAP": {
+            "title": "Cash Advance Request across SAP",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "VouchersRequesttoFinance": {
+            "title": "Vouchers Request to Finance",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "VouchersAdvanceFinanceApproval": {
+            "title": "Vouchers/Advance - Finance Approval",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          }
+        }
+      },
+      "PLANNINGSETUP": {
+        "title": "PLANNING & SET UP",
+        "properties": {
+          "FinalRecruitmentQuestionnairetoDA": {
+            "title": "Final Recruitment Questionnaire to DA",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FinalDiscussionGuidetoModerator": {
+            "title": "Final Discussion Guide to Moderator",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "OnSessionPresentationShowcardsConceptsAds": {
+            "title": "On Session Presentation: Showcards, Concepts, Ads,...",
+            "default": false,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "ConductProjectPlanningMeetingClientObjective": {
+            "title": "ConductProjectPlanningMeetingClientObjective",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "BriefingInstructiontoDA": {
+            "title": "Briefing Instruction to DA",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FinalFWItoDA": {
+            "title": "Final FWI to DA",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "BriefingInstructiontoModerator": {
+            "title": "Briefing Instruction to Moderator",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "BriefingInstructiontoRecruiters": {
+            "title": "Briefing Instruction to Recruiters",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "RespondentsQCCalllistening": {
+            "title": "Respondent's QC (Call listening)",
+            "default": true,
+            "access": "QC",
+            "Role": "QC"
+          },
+          "FWScheduletoCS": {
+            "title": "FW Schedule to CS",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "BookingTranscriptionTeam": {
+            "title": "Booking Transcription Team",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "BookingTranslatorfortheStudyifrequired": {
+            "title": "Booking Translator for the Study (if required)",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "BookingVenue": {
+            "title": "Booking Venue",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "ProductsMaterialsPurchases": {
+            "title": "Products/Materials Purchases",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "RespondentsValidationStarts": {
+            "title": "Respondents Validation Starts",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "RespondentsValidationFinished": {
+            "title": "Respondents Validation Finished",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "RespondentsProfiletoCS": {
+            "title": "Respondents Profile to CS",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          }
+        }
+      },
+      "EXECUTION": {
+        "title": "EXECUTION",
+        "properties": {
+          "FWStart": {
+            "title": "FW Start",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "PISentry": {
+            "title": "PIS entry",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "Batch1stofAudiostoTranscriptionTeam": {
+            "title": "1st Batch of Audios to Transcription Team",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "LastBatchofAudiostoTranscriptionTeam": {
+            "title": "Last Batch of Audios to Transcription Team",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "Batch1stofCompletedTranscriptstoDAS": {
+            "title": "1st Batch of Completed Transcripts to DA & CS",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "LastBatchofCompletedTranscriptstoDACS": {
+            "title": "Last Batch of Completed Transcripts to DA & CS",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "FWFinished": {
+            "title": "FW Finished",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "IncentiveCheck": {
+            "title": "Incentive Check",
+            "default": true,
+            "access": "QC",
+            "Role": "QC"
+          },
+          "ReFieldworkifapplicable": {
+            "title": "Re-Fieldwork (if applicable)",
+            "default": false,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FinalIQCReporttoDACS": {
+            "title": "Final IQC Report to DA & CS",
+            "default": false,
+            "access": "FM,E2S",
+            "Role": "FM"
+          }
+        }
+      },
+      "CLOSING": {
+        "title": "CLOSING",
+        "properties": {
+          "PaymentsheetAllProjectCost": {
+            "title": "Payment sheet (All Project Cost)",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          },
+          "ClosureAdvanceIncentive": {
+            "title": "Closure Advance/Incentive",
+            "default": true,
+            "access": "FM,E2S",
+            "Role": "FM"
+          }
+        }
+      }
+    }
+  },
+  {
+    "title": "ONLINE",
+    "properties": {
+      "INITIATION": {
+        "title": "INITIATION",
+        "properties": {
+          "EWNProjectCommissioned": {
+            "title": "EWN: Project Commissioned",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "SalesforceApproval": {
+            "title": "Salesforce Approval",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          }
+        }
+      },
+      "BOOKING&TESTING": {
+        "title": "BOOKING & TESTING",
+        "properties": {
+          "ProgrammingBookingQnrSP": {
+            "title": "Programming (Booking & Qnr SP)",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "TranslationsBookingQnrTrsl": {
+            "title": "Translations (Booking & Qnr Trsl)",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "DPChartingBooking": {
+            "title": "DP & Charting Booking",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "PPMchecklistdiscussion": {
+            "title": "PPM (PPM checklist discussion)",
+            "default": true,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "FinalQnrSignOffbyClient": {
+            "title": "Final Qnr Sign Off by Client",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "Questionnairesharedforprogramming": {
+            "title": "Questionnaire shared for programming",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "TestlinkDeliverywithalllaunguages": {
+            "title": "Test link Delivery (with all launguages)",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "TestlinkconfirmationfromtheCS": {
+            "title": "Test link confirmation from the CS (with all launguages)",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "TestlinkconfirmationfromtheOps": {
+            "title": "Test link confirmation from the Ops (with all launguages)",
+            "default": true,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "FinalLinkDelivery": {
+            "title": "Final Link Delivery",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          }
+        }
+      },
+      "PLANNINGSETUP": {
+        "title": "PLANNING & SET UP",
+        "properties": {
+          "SoftLaunch": {
+            "title": "Soft Launch",
+            "default": false,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "SoftLaunchDataCheck": {
+            "title": "Soft Launch Data Check",
+            "default": true,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "TimestampandSoftLaunchDataconfirmation": {
+            "title": "Timestamp and Soft Launch Data confirmation",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          }
+        }
+      },
+      "EXECUTION": {
+        "title": "EXECUTION",
+        "properties": {
+          "PISentry": {
+            "title": "PIS entry",
+            "default": false,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "FullLaunch": {
+            "title": "FW Start - Full Launch",
+            "default": true,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "Interimdatacheck1": {
+            "title": "Interim data check  - 1",
+            "default": true,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "Interimdatacheck2": {
+            "title": "Interim data check  - 2",
+            "default": false,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "Interimdatacheck3": {
+            "title": "Interim data check  - 3",
+            "default": false,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "AnalysisPlan": {
+            "title": "Analysis Plan",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FWCompletion": {
+            "title": "FW END - Completion",
+            "default": true,
+            "access": "FM",
+            "Role": "FM"
+          }
+        }
+      },
+      "CLOSING": {
+        "title": "CLOSING",
+        "properties": {
+          "FinalDatatotheCS": {
+            "title": "Final Data to the CS",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "FieldworkLinkclosureconfirmation": {
+            "title": "Field work/Link closure confirmation",
+            "default": true,
+            "access": "CS",
+            "Role": "CS"
+          },
+          "FinalqualifiedIDswiththevendor": {
+            "title": "Final qualified IDs with the vendor",
+            "default": true,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "PISClosure": {
+            "title": "PIS Closure",
+            "default": false,
+            "access": "FM",
+            "Role": "FM"
+          },
+          "SPSSDatadelivery": {
+            "title": "SPSS Data delivery",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "DataCoding": {
+            "title": "Data Coding",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "DataProcesing": {
+            "title": "Data Procesing",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          },
+          "Charting": {
+            "title": "Charting",
+            "default": true,
+            "access": "SUD",
+            "Role": "SUD"
+          }
+        }
+      }
+    }
+  }
+]

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<style>
+    table {
+        border: 1px solid !important;
+        border-collapse: collapse !important;
+    }
+
+    td,
+    th {
+        padding: 5px;
+        border-collapse: collapse !important;
+        border: 1px solid !important;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+</style>
+
+<body style="text-align: left;">
+    <table style="border-spacing: 0;width: 50rem;">
+        <tr style="height:56pt">
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);padding:5pt;overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;text-align:center;margin-top:0pt;margin-bottom:0pt"> <span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:54px;height:54px"><img
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/EWN-Note.png"
+                                width="41" height="54" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:18pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;">You
+                        Have Been Added To The
+                        Following Project</span></p>
+            </td>
+            <td style="vertical-align:top;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:26px;height:37px"><img
+                                alt="N-Element-Tab-White_RGB.png"
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/N-Element-Tab-White_RGB.png"
+                                width="26" height="37" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+        </tr>
+    </table>
+    <div style="width: 50rem;">
+        <p style="font-size: 18pt;font-family: Arial;color: rgb(0,0,0);font-weight: 700;">
+            TASK COMPLETION NOTIFICATION</p>
+
+        <p><strong>Dear teams,</strong><br><br>
+            The following activities has been completed, please ensure to close the pending activities on time.</p>
+
+    </div>
+    <div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="project-details">
+            <h3 colspan="12" style="text-transform:uppercase;">
+                Project Details</h3>
+            <table style="background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+                <tbody>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project Name</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ProjectName %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project ID</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ProjectId %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Methodology</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].Label? data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].Label : null%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Current Wave</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">FW Start Date</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">FW End Date</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div>
+            <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;"
+                class="project-details">
+                <h3 colspan="12" style="text-transform:uppercase;">
+                    Activity Details</h3>
+                <table
+                    style="background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+                    <thead>
+                        <tr>
+                            <th>Activity Name</th>
+                            <th>Owner</th>
+                            <th>Planned Date</th>
+                            <th>Actual Date</th>
+                            <th>User</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">PIS entry</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">QC - 1st report out on
+                                30% of FW Done</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">QC - 2nd report out on
+                                60% of FW Done</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">Tables specs delivery
+                                (AP)</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">Charting template</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">QC - final report out on
+                                100% of FW Done</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">E2S to confirm FW end
+                            </td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">Payment sheet</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                        <tr>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px">Charting delivery</td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div>
+                <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;"
+                    class="project-details">
+                    <h3 colspan="12" style="text-transform:uppercase;">
+                        Activity Details</h3>
+                    <table
+                        style="background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+                        <thead>
+                            <tr>
+                                <th>Activity Name</th>
+                                <th>Owner</th>
+                                <th>Planned Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="border:1px solid; border-collapse:collapse; padding:5px">Field Briefing</td>
+                                <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                                <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            </tr>
+                            <tr>
+                                <td style="border:1px solid; border-collapse:collapse; padding:5px">FW End</td>
+                                <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                                <td style="border:1px solid; border-collapse:collapse; padding:5px"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <hr />
+                <p>Please access the project planner to view the complete project activites.</p>
+                <p><b>Reminder: Please do not share any planner details with external teams.</b></p>
+            </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{
+  "AU": {
+    "JobCountNumberOfQuestions": {
+      "Up to 120": 1,
+      "121 to 240": 1.5,
+      "241 to 400": 2
+    },
+    "JobCountChange": {
+      "0 to 10%": 0.2,
+      "11 to 30%": 0.4,
+      "31 to 60%": 0.6,
+      "> 60%": 1
+    },
+    "UnitCost": 10
+  },
+  "NZ": {
+    "JobCountNumberOfQuestions": {
+      "Up to 120": 1,
+      "121 to 240": 1.5,
+      "241 to 400": 2
+    },
+    "JobCountChange": {
+      "0 to 10%": 0.2,
+      "11 to 30%": 0.4,
+      "31 to 60%": 0.6,
+      "> 60%": 1
+    },
+    "UnitCost": 10
+  },
+  "AE": {
+    "JobCountNumberOfQuestions": {
+      "Up to 120": 1,
+      "121 to 240": 1.5,
+      "241 to 400": 2
+    },
+    "JobCountChange": {
+      "0 to 10%": 0.2,
+      "11 to 30%": 0.4,
+      "31 to 60%": 0.6,
+      "> 60%": 1
+    },
+    "UnitCost": 10
+  }
+}

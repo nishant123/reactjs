@@ -1,0 +1,59 @@
+{
+	"title": "",
+	"bands": [
+		"Executive Director",
+		"Director",
+		"Associate Director",
+		"Senior Manager",
+		"Manager",
+		"Senior Executive",
+		"Executive",
+		"Data Science"
+	],
+	"properties": {
+		"ProjectKickoff": {
+			"title": "Project Kickoff",
+			"type": "number",
+			"description": "Project Kickoff"
+		},
+		"QuestionnaireGuidePreparation": {
+			"title": "Questionnaire/Screener/Discussion Guide Preparation",
+			"type": "number",
+			"description": "Questionnaire/Screener/Discussion Guide Preparation"
+		},
+		"SampleDesign": {
+			"title": "Sample Design",
+			"type": "number",
+			"description": "Sample Design"
+		},
+		"FieldworkBriefing": {
+			"title": "Fieldwork briefing",
+			"type": "number"
+		},
+		"ProjectManagement": {
+			"title": "Project Management",
+			"type": "number"
+		},
+		"Fieldwork": {
+			"title": "Fieldwork (incl. Moderation)",
+			"type": "number"
+		},
+		"DataProcessing": {
+			"title": "Data processing & analysis",
+			"type": "number"
+		},
+		"ReportPreparation": {
+			"title": "Report Preparation",
+			"type": "number",
+			"description": "(Includes Finalisation of Report Template, Topline Report, Final Report etc.)"
+		},
+		"Presentation": {
+			"title": "Presentation",
+			"type": "number"
+		},
+		"MiscTime": {
+			"title": "Revision & Misc Time (if any)",
+			"type": "number"
+		}
+	}
+}

@@ -1,0 +1,873 @@
+[
+    {
+        "title": "PPM CHECKLIST",
+        "Properties": {
+         "GeneralStudyInformation": {
+          "title": "GENERAL STUDY INFORMATION",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "PurposeAndObjectiveOfTheProject": {
+            "title": "Purpose And Objective Of The Project",
+            "type": "boolean"
+           },
+           "StudyTypeMethodology": {
+            "title": "Study Type Methodology",
+            "type": "boolean"
+           },
+           "EstimatedOutOfPocketCosts": {
+            "title": "Estimated Out Of Pocket Costs",
+            "type": "boolean"
+           },
+           "PurchasesToBeMade": {
+            "title": "Purchases To Be Made",
+            "type": "boolean"
+           },
+           "AnySpecificInterviewerRequirement": {
+            "title": "Any Specific Interviewer Requirement",
+            "type": "boolean"
+           }
+          }
+         },
+         "SelectionMethodScreeningCategories": {
+          "title": "SELECTION METHOD/ SCREENING CATEGORIES",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "NumberOfInterviewsNeeded": {
+            "title": "Number Of Interviews Needed",
+            "type": "boolean"
+           },
+           "AreaCoverage": {
+            "title": "Area Coverage",
+            "type": "boolean"
+           },
+           "TargetGroup": {
+            "title": "Target Group",
+            "type": "boolean"
+           },
+           "IncidenceRate": {
+            "title": "Incidence Rate",
+            "type": "boolean"
+           },
+           "DemoQuotaRequirements": {
+            "title": "Demo Quota Requirements",
+            "type": "boolean"
+           },
+           "QuotaDesignRequirements": {
+            "title": "Quota Design Requirements",
+            "type": "boolean"
+           }
+          }
+         },
+         "OtherClientServiceClientRequirements": {
+          "title": "OTHER CLIENT SERVICE/ CLIENT REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "AnticipatedLevelOfClientInvolvement": {
+            "title": "Anticipated Level Of Client Involvement",
+            "type": "boolean"
+           },
+           "InterviewRecordingRequirements": {
+            "title": "Interview Recording Requirements",
+            "type": "boolean"
+           },
+           "NDAsNeededForInterviewers": {
+            "title": "NDAs Needed For Interviewers",
+            "type": "boolean"
+           },
+           "NDAsNeededForRespondents": {
+            "title": "NDAs Needed For Respondents",
+            "type": "boolean"
+           }
+          }
+         },
+         "PilotTestRequirements": {
+          "title": "PILOT TEST REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "PilotRequirements": {
+            "title": "Pilot Requirements",
+            "type": "boolean"
+           },
+           "AnySpecialCriteriaToCheckMonitor": {
+            "title": "Any Special Criteria To Check Monitor",
+            "type": "boolean"
+           }
+          }
+         },
+         "QualityControlRequirements": {
+          "title": "QUALITY CONTROL REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "QualityControlIfOtherThanTheStandard": {
+            "title": "Quality Control If Other Than The Standard",
+            "type": "boolean"
+           },
+           "SpecificQuestionsToBeAskedDuringReContacts": {
+            "title": "Specific Questions To Be Asked During Re Contacts",
+            "type": "boolean"
+           },
+           "DataQualityAnalysisPercentageAndRequirements": {
+            "title": "Data Quality Analysis Percentage And Requirements",
+            "type": "boolean"
+           }
+          }
+         },
+         "IfApplicable": {
+          "title": "IF APPLICABLE",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "CentralLocationTestVenueRequirements": {
+            "title": "Central Location Test Venue Requirements",
+            "type": "boolean"
+           },
+           "TestProductsConceptBoardDelivery": {
+            "title": "Test Products Concept Board Delivery",
+            "type": "boolean"
+           }
+          }
+         }
+        }
+    },
+    {
+        "title": "PROJECT BRIEFING",
+        "Properties": {
+         "PurposeOfProject": {
+          "title": "PURPOSE OF PROJECT",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "BrieflyExplainTheBackgroundAndObjectives": {
+            "title": "Briefly Explain The Background And Objectives",
+            "type": "boolean"
+           },
+           "ForTrackersShareWatchOutsAndLearning": {
+            "title": "For Trackers Share Watch Outs And Learning",
+            "type": "boolean"
+           }
+          }
+         },
+         "InterviewLength": {
+          "title": "INTERVIEW LENGTH",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ShareInterviewLengthExpectations": {
+            "title": "Share Interview Length Expectations",
+            "type": "boolean"
+           }
+          }
+         },
+         "MethodologyKeyRequirements": {
+          "title": "METHODOLOGY/ KEY REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "DescribeTheSpecificMethodologyAndAny": {
+            "title": "Describe The Specific Methodology And Any",
+            "type": "boolean"
+           }
+          }
+         },
+         "ProjectSchedule": {
+          "title": "PROJECT SCHEDULE",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ConfirmAllKeyMilestonesAndDeliveryDates": {
+            "title": "Confirm All Key Milestones And Delivery Dates",
+            "type": "boolean"
+           }
+          }
+         },
+         "SamplingMethod": {
+          "title": "SAMPLING METHOD",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ReviewSampleMethod": {
+            "title": "Review Sample Method",
+            "type": "boolean"
+           }
+          }
+         },
+         "SelectionMethodScreeningCategories": {
+          "title": "SELECTION METHOD/ SCREENING CATEGORIES",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "DiscussAnyScreening": {
+            "title": "Discuss Any Screening",
+            "type": "boolean"
+           }
+          }
+         },
+         "DemographicsQuotaRequirements": {
+          "title": "DEMOGRAPHICS/ QUOTA REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ReviewQuotaNeeds": {
+            "title": "Review Quota Needs",
+            "type": "boolean"
+           }
+          }
+         },
+         "StatusUpdatesreporting": {
+          "title": "STATUS UPDATES/REPORTING",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ShareDesiredFrequencyAndContentOfField": {
+            "title": "Share Desired Frequency And Content Of Field",
+            "type": "boolean"
+           }
+          }
+         },
+         "IntroductionTextOnQuestionnaire": {
+          "title": "INTRODUCTION TEXT ON QUESTIONNAIRE",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ProvideGuidanceOnUsingClient": {
+            "title": "Provide Guidance On Using Client",
+            "type": "boolean"
+           }
+          }
+         },
+         "QuestionnaireOverview": {
+          "title": "QUESTIONNAIRE OVERVIEW",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ReviewQuestionnaireWithEmphasisOnSensitive": {
+            "title": "Review Questionnaire With Emphasis On Sensitive",
+            "type": "boolean"
+           }
+          }
+         },
+         "OtherClientServiceClientRequirements": {
+          "title": "OTHER CLIENT SERVICE/ CLIENT REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "GoThroughTheQuestionnaire": {
+            "title": "Go Through The Questionnaire",
+            "type": "boolean"
+           }
+          }
+         },
+         "ConfidentialitySecurity": {
+          "title": "CONFIDENTIALITY/ SECURITY",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ConfirmWhetherClientService": {
+            "title": "Confirm Whether Client Service",
+            "type": "boolean"
+           }
+          }
+         },
+         "StimulusMaterialsTestProducts": {
+          "title": "STIMULUS MATERIALS/ TEST PRODUCTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "DiscussConfidentialitySecurity": {
+            "title": "Discuss Confidentiality Security",
+            "type": "boolean"
+           },
+           "ProvideOverviewOfMaterialsProducts": {
+            "title": "Provide Overview Of Materials Products",
+            "type": "boolean"
+           }
+          }
+         }
+        }
+    },
+    {
+     "title": "INTERVIEW BRIEFING I",
+     "Properties": {
+      "ConfidentialitySecurity": {
+       "title": "CONFIDENTIALITY/ SECURITY",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "AllProjectRelatedMaterials": {
+         "title": "All Project Related Materials",
+         "type": "boolean"
+        },
+        "ReferToTheFieldSecurity": {
+         "title": "Refer To The Field Security",
+         "type": "boolean"
+        },
+        "RemindRespondents": {
+         "title": "Remind Respondents",
+         "type": "boolean"
+        }
+       }
+      },
+      "DispatchRequirements": {
+       "title": "DISPATCH REQUIREMENTS",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "Papi": {
+         "title": "Papi",
+         "type": "boolean"
+        },
+        "ModeOfDelivery": {
+         "title": "Mode Of Delivery",
+         "type": "boolean"
+        },
+        "FrequencyOfReturningWorkToTheSupervisor": {
+         "title": "Frequency Of Returning Work To The Supervisor",
+         "type": "boolean"
+        },
+        "ElectronicDataCollection": {
+         "title": "Electronic Data Collection",
+         "type": "boolean"
+        },
+        "DataTransmissionSyncing": {
+         "title": "Data Transmission Syncing",
+         "type": "boolean"
+        }
+       }
+      },
+      "QualityChecks": {
+       "title": "QUALITY CHECKS",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "AccompanimentObservations": {
+         "title": "Accompaniment Observations",
+         "type": "boolean"
+        },
+        "RespondentReContacts": {
+         "title": "Respondent Re Contacts",
+         "type": "boolean"
+        },
+        "DQA": {
+         "title": "DQA",
+         "type": "boolean"
+        }
+       }
+      },
+      "InterviewClosureRequirements": {
+       "title": "INTERVIEW CLOSURE REQUIREMENTS",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "RepeatInterviewerName": {
+         "title": "Repeat Interviewer Name",
+         "type": "boolean"
+        },
+        "AdviseRespondent": {
+         "title": "Advise Respondent",
+         "type": "boolean"
+        }
+       }
+      },
+      "StimulusMaterialProductsIfApplicable": {
+       "title": "STIMULUS MATERIAL/ PRODUCTS (IF APPLICABLE)",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "HandlingOfStimulusMSCF": {
+         "title": "Handling Of Stimulus Materials/Show-cards/Concept Boards/Fast Cards",
+         "type": "boolean"
+        },
+        "ProductPlacementInstructions": {
+         "title": "Product Placement Instructions",
+         "type": "boolean"
+        },
+        "ProductRetrievalInstructions": {
+         "title": "Product Retrieval Instructions",
+         "type": "boolean"
+        },
+        "ProductCountsChecksForms": {
+         "title": "Product Counts Checks Forms",
+         "type": "boolean"
+        },
+        "NonDisclosureAgreement": {
+         "title": "Non Disclosure Agreement",
+         "type": "boolean"
+        }
+       }
+      },
+      "OpenendedQuestions": {
+       "title": "OPEN-ENDED QUESTIONS",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "LevelOfProbingRequired": {
+         "title": "Level Of Probing Required",
+         "type": "boolean"
+        },
+        "InstructionsOnClarifyingInitialResponses": {
+         "title": "Instructions On Clarifying Initial Responses",
+         "type": "boolean"
+        }
+       }
+      },
+      "ElectronicDataCollection": {
+       "title": "ELECTRONIC DATA COLLECTION",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "OpenEndCapture": {
+         "title": "Open End Capture",
+         "type": "boolean"
+        }
+       }
+      },
+      "Questionnaire": {
+       "title": "QUESTIONNAIRE",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "CompleteAQuestionByQuestionReview": {
+         "title": "Complete A Question By Question Review",
+         "type": "boolean"
+        },
+        "WhatDoesEachQuestionsAimToEstablish": {
+         "title": "What Does Each Questions Aim To Establish",
+         "type": "boolean"
+        },
+        "IndicateHowEachQuestionsAnswerIsToBeRecorded": {
+         "title": "Indicate How Each Questions Answer Is To Be Recorded",
+         "type": "boolean"
+        },
+        "SingleAndMultiSelectQuestions": {
+         "title": "Single And Multi Select Questions",
+         "type": "boolean"
+        },
+        "SpontaneousAwarenessVsPromptedAwareness": {
+         "title": "Spontaneous Awareness Vs Prompted Awareness",
+         "type": "boolean"
+        },
+        "ExplainTheUseOfAnyRatingRankingScales": {
+         "title": "Explain The Use Of Any Rating Ranking Scales",
+         "type": "boolean"
+        },
+        "ReviewGridQuestionInstructions": {
+         "title": "Review Grid Question Instructions",
+         "type": "boolean"
+        },
+        "FocusOnSensitiveUniqueOrComplicatedQuestions": {
+         "title": "Focus On Sensitive Unique Or Complicated Questions",
+         "type": "boolean"
+        },
+        "IdentifyRotatedQuestionsOrResponses": {
+         "title": "Identify Rotated Questions Or Responses",
+         "type": "boolean"
+        },
+        "ReviewSkipLogicThroughoutQuestionnaire": {
+         "title": "Review Skip Logic Throughout Questionnaire",
+         "type": "boolean"
+        },
+        "ElaborateOnQuestionnaireContentTerminology": {
+         "title": "Elaborate On Questionnaire Content Terminology",
+         "type": "boolean"
+        }
+       }
+      },
+      "AudioRecordings": {
+       "title": "AUDIO RECORDINGS",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "InterviewersMustDirectlyInform": {
+         "title": "Interviewers Must Directly Inform",
+         "type": "boolean"
+        }
+       }
+      },
+      "RequiredForms": {
+       "title": "REQUIRED FORMS",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "ContactSheetsCallSheetRequirements": {
+         "title": "Contact Sheets Call Sheet Requirements",
+         "type": "boolean"
+        }
+       }
+      },
+      "StatusUpdatesInterviewerReporting": {
+       "title": "STATUS UPDATES/ INTERVIEWER REPORTING",
+       "properties": {
+        "isActive": {
+         "title": "isActive",
+         "type": "boolean"
+        },
+        "Comments": {
+         "title": "Comments",
+         "type": "string"
+        },
+        "FrequencyAndContentOfFieldProgressUpdates": {
+         "title": "Frequency And Content Of Field Progress Updates",
+         "type": "boolean"
+        }
+       }
+      }
+     }
+    },
+    {
+        "title": "INTERVIEW BRIEFING II",
+        "Properties": {
+         "PrivacyRequirements": {
+          "title": "PRIVACY REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "PrivacyActReviewTheLocalCountryPrivacyRequirements": {
+            "title": "Privacy Act Review The Local Country Privacy Requirements",
+            "type": "boolean"
+           }
+          }
+         },
+         "InterviewerDeclaration": {
+          "title": "INTERVIEWER DECLARATION",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "SignAcknowledgeADeclarationOnEachQuestionnaire": {
+            "title": "Sign Acknowledge A Declaration On Each Questionnaire",
+            "type": "boolean"
+           }
+          }
+         },
+         "PurposeOfProject": {
+          "title": "PURPOSE OF PROJECT",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "BackgroundAndObjectivesOfTheProject": {
+            "title": "Background And Objectives Of The Project",
+            "type": "boolean"
+           },
+           "WatchOutsAndLearningFromPreviousWaves": {
+            "title": "Watch Outs And Learning From Previous Waves",
+            "type": "boolean"
+           }
+          }
+         },
+         "InterviewLength": {
+          "title": "INTERVIEW LENGTH",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "InterviewLengthExpectations": {
+            "title": "Interview Length Expectations",
+            "type": "boolean"
+           }
+          }
+         },
+         "MethodologyKeyRequirements": {
+          "title": "METHODOLOGY/ KEY REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "MethodologyAndAnyClientRequirements": {
+            "title": "Methodology And Any Client Requirements",
+            "type": "boolean"
+           }
+          }
+         },
+         "ProjectSchedule": {
+          "title": "PROJECT SCHEDULE",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "KeyMilestonesAndDeliveryDates": {
+            "title": "Key Milestones And Delivery Dates",
+            "type": "boolean"
+           },
+           "EstimatedNumberOfInterviews": {
+            "title": "Estimated Number Of Interviews",
+            "type": "boolean"
+           }
+          }
+         },
+         "SamplingMethod": {
+          "title": "SAMPLING METHOD",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "DoorToDoor": {
+            "title": "Door To Door",
+            "type": "boolean"
+           },
+           "CltStreetIntercept": {
+            "title": "CINTRAL Location Test (CLT)/Street Intercept (e.g., locations, intervals)",
+            "type": "boolean"
+           },
+           "ClientSuppliedSampleDatabasePanelContacts": {
+            "title": "Client Supplied Sample Database Panel Contacts",
+            "type": "boolean"
+           },
+           "PreRecruitment": {
+            "title": "Pre Recruitment",
+            "type": "boolean"
+           }
+          }
+         },
+         "SelectionMethodScreeningCategories": {
+          "title": "SELECTION METHOD/ SCREENING CATEGORIES",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "DiscussAnyScreeningRequirements": {
+            "title": "Discuss Any Screening Requirements",
+            "type": "boolean"
+           }
+          }
+         },
+         "DemographicsQuotaRequirements": {
+          "title": "DEMOGRAPHIC/ QUOTA REQUIREMENTS",
+          "properties": {
+           "isActive": {
+            "title": "isActive",
+            "type": "boolean"
+           },
+           "Comments": {
+            "title": "Comments",
+            "type": "string"
+           },
+           "ReviewQuotaNeeds": {
+            "title": "Review Quota Needs",
+            "type": "boolean"
+           }
+          }
+         }
+        }
+    }
+]

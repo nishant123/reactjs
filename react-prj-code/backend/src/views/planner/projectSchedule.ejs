@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<style>
+    table {
+        border: 1px solid !important;
+        border-collapse: collapse !important;
+    }
+
+    td,
+    th {
+        padding: 5px;
+        border-collapse: collapse !important;
+        border: 1px solid !important;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+</style>
+
+<body style="text-align: left;">
+    <table style="border-spacing: 0;width: 50rem;">
+        <tr style="height:56pt">
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);padding:5pt;overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;text-align:center;margin-top:0pt;margin-bottom:0pt"> <span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:54px;height:54px"><img
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/EWN-Note.png"
+                                width="41" height="54" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:18pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;">PROJECT
+                        SCHEDULE</span></p>
+            </td>
+            <td style="vertical-align:top;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:26px;height:37px"><img
+                                alt="N-Element-Tab-White_RGB.png"
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/N-Element-Tab-White_RGB.png"
+                                width="26" height="37" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+        </tr>
+    </table>
+    <div style="width: 50rem;">
+        <p style="font-size: 18pt;font-family: Arial;color: rgb(0,0,0);font-weight: 700;">
+            NEW PROJECT ASSIGNMENT</p>
+
+        <p><strong>Dear teams,</strong><br><br>
+            The following are the details of a new project assigned for execution. For any further
+            questions regarding this project, please contact the costing coordinator of your respective
+            market.</p>
+
+    </div>
+    <div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="project-details">
+            <h3 colspan="12" style="text-transform:uppercase;">
+                Project Details</h3>
+            <table style="background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+                <tbody>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project Name</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ProjectName %>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project ID</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ProjectId %>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Opportunity Number</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ContractDetails[0].OpportunityNumber ? data.ContractDetails[0].OpportunityNumber : null  %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Industry</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ContractDetails[0].Industry? data.ContractDetails[0].Industry : null %>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Methodology Name</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].Label? data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].Label : null %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Function</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%func%></td>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Project Type</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=data.CostingProfiles[0].IsTracker ? "Tracker" : "ADHOC"%>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Number of Waves</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=data.CostingProfiles[0].IsTracker ?data.CostingProfiles[0].NumberOfWaves:"NA"%>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Current Wave</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=data.CostingProfiles[0].IsTracker ? data.CostingProfiles[0].NumberOfWaves:"NA"%>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Expected Field Work Start Date</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%=expectedFieldWorkStartDate %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Field Work Duration</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            No data available</td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">City Coverage</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].RFQData? data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs[0].RFQData.citiesCoverage : null %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Account Name</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.ContractDetails.length > 0 ? data.ContractDetails[0].AccountName : null %>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Commissioning Country Name
+                        </td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= data.CommissioningCountry? data.CommissioningCountry : null%>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Comments</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="schedule">
+
+            <h3 colspan="12" style="text-transform:uppercase;">
+                <%="Schedule"%></h3>
+            <table
+                style=" background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+
+                <tbody>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">Commissioning Date
+                        </th>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%=data.CostingProfiles[0].WaveSpecs[0].DateWaveCommissioned? data.CostingProfiles[0].WaveSpecs[0].DateWaveCommissioned? new Date(data.CostingProfiles[0].WaveSpecs[0].DateWaveCommissioned).toDateString():"Not Available" : "Not Available" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            Final Questionnaire Availability</th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateFinalQuestionnaireNA? data.CostingProfiles[0].WaveSpecs[0].DateFinalQuestionnaire? new Date(data.CostingProfiles[0].WaveSpecs[0].DateFinalQuestionnaire).toDateString():"No Programming Required" : "No Programming Required" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%="Translations Due"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateTranslationsNA? data.CostingProfiles[0].WaveSpecs[0].DateTranslations? new Date(data.CostingProfiles[0].WaveSpecs[0].DateTranslations).toDateString():"No Translations Required" : "No Translations Required" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid; border-collapse: collapse; padding: 5px"><%="Field Start"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateFieldworkNA? data.CostingProfiles[0].WaveSpecs[0].DateFieldStart? new Date(data.CostingProfiles[0].WaveSpecs[0].DateFieldStart).toDateString():"No Fieldwork Required" : "No Fieldwork Required" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid; border-collapse: collapse; padding: 5px"><%="Field End"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateFieldworkNA? data.CostingProfiles[0].WaveSpecs[0].DateFieldEnd? new Date(data.CostingProfiles[0].WaveSpecs[0].DateFieldEnd).toDateString():"No Fieldwork Required" : "No Fieldwork Required" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%="Data Processing Due"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateDataProcessingNA? data.CostingProfiles[0].WaveSpecs[0].DateDataProcessing? new Date(data.CostingProfiles[0].WaveSpecs[0].DateDataProcessing).toDateString():"No Data Processing Required" : "No Data Processing Required" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px"><%="Charts Due"%></th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateChartsNA? data.CostingProfiles[0].WaveSpecs[0].DateCharts? new Date(data.CostingProfiles[0].WaveSpecs[0].DateCharts).toDateString():"No Charts Required" : "No Charts Required" %>
+                    </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px"><%="Dashboard Due"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateDashboardsNA? data.CostingProfiles[0].WaveSpecs[0].DateDashboards? new Date(data.CostingProfiles[0].WaveSpecs[0].DateDashboards).toDateString():"No Dashboards Required" : "No Dashboards Required" %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%="Final Report Due to the Client"%></th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!data.CostingProfiles[0].WaveSpecs[0].DateFinalReportNA? data.CostingProfiles[0].WaveSpecs[0].DateFinalReport? new Date(data.CostingProfiles[0].WaveSpecs[0].DateFinalReport).toDateString():"No Final Reports Required" : "No Final Reports Required" %>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="specifications">
+            <h3 colspan="12" style="text-transform:uppercase;">
+                <%="Fieldwork Specifications"%>
+                <%=data.CostingProfiles[0].IsMultiCountry ? "(Per Country)" : ""%></h3>
+            <table
+                style=" background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+
+                <tbody>
+                    <% data.CostingProfiles[0].CountrySpecs[0].MethodologySpecs.forEach(function(ms){%>
+
+                    <%let rfqData = {}%>
+
+                    <% data.CostingProfiles[0].CountrySpecs.forEach(function(cs){%>
+                    <%cs.MethodologySpecs.filter((mspc) => !mspc.NotApplicable).forEach(function(mspc){%>
+
+                    <%if (!rfqData[cs.CountryCode]) {%>
+                    <%rfqData[cs.CountryCode] = {}%>
+                    <%}%>
+          
+            <%if (!rfqData[cs.CountryCode][mspc.Code]) {%>
+                    <%rfqData[cs.CountryCode][mspc.Code] = {}%>
+                    <%}%>
+          <%rfqData[cs.CountryCode][mspc.Code] = mspc.RFQData%>
+
+                    <%})%>
+
+                    <%})%>
+
+                    <% let renderMeth=false %>
+                    <% data.CostingProfiles[0].CountrySpecs.forEach(function(country){%>
+                    <% renderMeth=renderMeth||(rfqData[country.CountryCode] && rfqData[country.CountryCode][ms.Code]&& Object.keys(rfqData[country.CountryCode][ms.Code]).length>0) %>
+
+                    <%}) %>
+                    <%if(renderMeth){%>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <h4 class="text-uppercase mb-0"><%=ms.Label%></h4>
+                        </th>
+                        <% data.CostingProfiles[0].CountrySpecs.forEach(function(country){%>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+
+                        </th>
+                        <%})%>
+                    </tr>
+                    <%}%> 
+
+                    <%if(ms.RFQSchema) {%>
+
+                    <%ms.RFQSchema.order.forEach(function(ord){%>
+
+                    <%let property=""%>
+                    <%if (ms.RFQSchema.properties[ord]) {%>
+
+                    <% property= ms.RFQSchema.properties[ord]%>
+                    <%}%>
+    
+    <%if (ms.RFQSchema.dependencies) {%>
+                    <%Object.keys(ms.RFQSchema.dependencies).forEach(function(dep){%>
+                    <%ms.RFQSchema.dependencies[dep].oneOf.forEach(function(oo){%>
+                    <%if (oo.properties[ord]&&!ms.RFQSchema.properties[ord]) {%>
+                    <%property = oo.properties[ord]%>
+                    <%}%>
+          <%})%>
+                    <%})%>
+                    <%}%>
+
+                    <% let renderRow=false %>
+                    <% data.CostingProfiles[0].CountrySpecs.forEach(function(country){%>
+                    <% renderRow=renderRow||(rfqData[country.CountryCode] && rfqData[country.CountryCode][ms.Code]&&rfqData[country.CountryCode][ms.Code][ord]) %>
+
+                    <%}) %>
+
+
+                    <%if (property.isNewSection&&renderRow) {%>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px"><%=property.sectionTitle%>
+                        </th>
+
+                        <%data.CostingProfiles[0].CountrySpecs.forEach(function(country){%>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%=(codeLabels.FieldingCountriesOptions.filter(final => final.Code == country.CountryCode))[0].Label%>
+                        </th>
+                        <%})%>
+
+                    </tr>
+                    <%}%>
+                    
+                    <%if(renderRow){%>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px"><%=property.title%>
+                    </td>
+
+                        <%data.CostingProfiles[0].CountrySpecs.forEach(function(country){%>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%if(rfqData[country.CountryCode] && rfqData[country.CountryCode][ms.Code]) {%>
+
+                            <%if(Array.isArray(rfqData[country.CountryCode][ms.Code][ord])) {%>
+
+                            <%=rfqData[country.CountryCode][ms.Code][ord].join()%>
+
+                            <%}%>
+    
+                <%if(Array.isArray(rfqData[country.CountryCode][ms.Code][ord])==false) {%>
+                            <%=rfqData[country.CountryCode][ms.Code][ord]%>
+                            <%}%>
+    
+                <%}%>
+
+                            <%if(!(rfqData[country.CountryCode] && rfqData[country.CountryCode][ms.Code])) {%>
+                            <%="Not Applicable"%>
+                            <%}%>
+    
+            </td>
+            <%})%>
+                    </tr>
+                    <% }%>
+
+                    <%})%>
+
+                    <%}%>
+    
+                        <%if(ms.RFQSchemaNA) {%>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px"><%=ms.Label%>
+                    </td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%="No data is available for this methodology."%>
+                        </td>
+                    </tr>
+                    <%}%>
+    
+                        <%})%>
+
+                </tbody>
+            </table>
+        </div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="notes">
+
+            <h3 colspan="12" style="text-transform:uppercase;">
+                <%="Notes"%></h3>
+            <table style="border-collapse:collapse; width: inherit;">
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Project Manager"%></b></th>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=data.NotesPM?data.NotesPM:"No notes provided"%>
+                    </td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Field Work"%></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=data.NotesFieldwork?data.NotesFieldwork:"No notes provided"%>
+                    </td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Final Reporting"%></b>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=data.NotesFinalReport?data.NotesFinalReport:"No notes provided"%>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr />
+    </div>
+</body>
+
+</html>

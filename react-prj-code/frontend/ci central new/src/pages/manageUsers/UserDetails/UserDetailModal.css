@@ -1,0 +1,25 @@
+.UserDetails{
+    max-width: 1250px;
+}
+
+.UserDetails .modal-content{
+    height: 500px;
+}
+
+.UserDetails .row{
+    margin: 0;
+}
+
+.UserDetails h5{
+    width: 100%;
+}
+
+.UserDetails .col{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 0;
+}
+
+.firstContainer .row{
+    padding: 0 0 20px 0;
+}

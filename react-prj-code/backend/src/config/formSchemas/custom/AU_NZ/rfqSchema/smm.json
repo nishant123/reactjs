@@ -1,0 +1,139 @@
+{
+	"title": "SMM (Online + Hardcopy Mailout) [Beta Template]",
+	"properties": {
+		"externalSampleProvider": {
+			"title": "External Sample Provider",
+			"type": "boolean",
+			"classNames": "break-before col-lg-4 col-md-4 col-sm-6 col-xs-6"
+		},
+		"nielsenPanels": {
+			"title": "Nielsen Panels",
+			"type": "boolean",
+			"classNames": "break-before col-lg-4 col-md-4 col-sm-6 col-xs-6"
+		},
+		"clientSupplied": {
+			"title": "Client Supplied",
+			"type": "boolean",
+			"classNames": "break-before col-lg-4 col-md-4 col-sm-6 col-xs-6"
+		},
+		"other": {
+			"title": "Other",
+			"type": "boolean",
+			"classNames": "break-before col-lg-4 col-md-4 col-sm-6 col-xs-6"
+		},
+		"lengthOfInterview": {
+			"title": "Length of Interview",
+			"type": "string",
+			"optionsLabel": "LengthOfInterviewOptions",
+			"widgetType": "multiselectdropdown",
+			"classNames": "break-before col-lg-4 col-md-4 col-sm-6 col-xs-6"
+		}
+	},
+	"dependencies": {
+		"externalSampleProvider": {
+			"oneOf": [
+				{
+					"properties": {
+						"externalSampleProvider": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"externalSampleProvider": {
+							"enum": [true]
+						},
+						"externalSampleSourceSize": {
+							"title": "External Sample Source Size",
+							"type": "integer",
+							"minimum": 0,
+							"classNames": "col-lg-4 col-md-4 col-sm-6 col-xs-6"
+						},
+						"incidenceRate": {
+							"title": "Incidence Rate",
+							"type": "string",
+							"optionsLabel": "IncidenceRateOptions",
+							"widgetType": "multiselectdropdown",
+							"classNames": "col-lg-4 col-md-4 col-sm-6 col-xs-6"
+						}
+					}
+				}
+			]
+		},
+		"nielsenPanels": {
+			"oneOf": [
+				{
+					"properties": {
+						"nielsenPanels": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"nielsenPanels": {
+							"enum": [true]
+						},
+						"internalSampleSourceSize": {
+							"title": "Nielsen Panels Sample Source Size",
+							"type": "integer",
+							"minimum": 0,
+							"classNames": "col-lg-4 col-md-4 col-sm-6 col-xs-6"
+						}
+					}
+				}
+			]
+		},
+		"clientSupplied": {
+			"oneOf": [
+				{
+					"properties": {
+						"clientSupplied": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"clientSupplied": {
+							"enum": [true]
+						},
+						"clientSuppliedSampleSourceSize": {
+							"title": "Client Supplied Sample Source Size",
+							"type": "integer",
+							"minimum": 0,
+							"classNames": "col-lg-4 col-md-4 col-sm-6 col-xs-6"
+						}
+					}
+				}
+			]
+		},
+		"other": {
+			"oneOf": [
+				{
+					"properties": {
+						"other": {
+							"enum": [false]
+						}
+					}
+				},
+				{
+					"properties": {
+						"other": {
+							"enum": [true]
+						},
+						"otherSampleSourceSize": {
+							"title": "Other Sample Source Size",
+							"type": "integer",
+							"minimum": 0,
+							"classNames": "col-lg-4 col-md-4 col-sm-6 col-xs-6"
+						}
+					}
+				}
+			]
+		}
+	},
+	"required": ["externalSampleSourceSize", "incidenceRate", "internalSampleSourceSize", "clientSuppliedSampleSourceSize", "otherSampleSourceSize", "lengthOfInterview"],
+	"order": ["externalSampleProvider", "externalSampleSourceSize", "incidenceRate", "nielsenPanels", "internalSampleSourceSize", "clientSupplied", "clientSuppliedSampleSourceSize", "other", "otherSampleSourceSize", "lengthOfInterview"]
+}

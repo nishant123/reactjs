@@ -1,0 +1,123 @@
+{
+    "properties": {
+        "programmerAssigned": {
+            "title": "Programmer Assigned",
+            "isTCSOnly": true
+        },
+        "groupLeadName": {
+            "title": "Group Lead Name"
+        },
+        "initialSetupCTDays": {
+            "title": "Initial Setup CT Days",
+            "isTCSOnly": true
+        },
+        "costCentre": {
+            "title": "Cost Centre",
+            "isTCSOnly": true
+        },
+        "complexityLevel": {
+            "title": "Complexity Level"
+        },
+        "platform": {
+            "title": "Platform"
+        },
+        "dataCollection": {
+            "title": "Data Collection"
+        },
+        "dataCollectionOther": {
+            "title": "Data Collection Other"
+        },
+        "actualDateFinalQuestionnaire": {
+            "title": "Actual Date Final Questionnaire to Programming"
+        },
+        "actualDateProgrammingStart": {
+            "title": "Actual Date Programming Start"
+        },
+        "firstTestLinkSentDate": {
+            "title": "Date First Test Link Sent"
+        },
+        "changesBeforeDelivery": {
+            "title": "Changes Before Initial Link Delivery"
+        },
+        "testSurveyProjID": {
+            "title": "Test Survey Project Id",
+            "isTCSOnly": true
+        },
+        "DateLiveLinkProvided": {
+            "title": "DateLiveLinkProvided"
+        },
+        "ActualStartFieldDate": {
+            "title": "ActualStartFieldDate"
+        },
+        "NumberOfQuestions": {
+            "title": "NumberOfQuestions",
+            "isTCSOnly": true
+        },
+        "ChangesToUniqueQuestions": {
+            "title": "ChangesToUniqueQuestions",
+            "isTCSOnly": true
+        },
+        "ChangesToUniqueQuestionsNA": {
+            "title": "ChangesToUniqueQuestionsNA",
+            "isTCSOnly": true
+        },
+        "NumberOfPids": {
+            "title": "NumberOfPids",
+            "isTCSOnly": true
+        },
+        "ChangesAfterInitialLinkDelivery": {
+            "title": "ChangesAfterInitialLinkDelivery"
+        },
+        "NumberOfIterations": {
+            "title": "NumberOfIterations",
+            "isTCSOnly": true
+        },
+        "ErrorsInInitialLinkDelivery": {
+            "title": "ErrorsInInitialLinkDelivery"
+        },
+        "ErrorsAfterInitialLinkDelivery": {
+            "title": "ErrorsAfterInitialLinkDelivery"
+        },
+        "JobCount": {
+            "title": "JobCount",
+            "isTCSOnly": true
+        },
+        "LiveSurveyProjectId": {
+            "title": "Live Survey Project Id",
+            "isTCSOnly": true
+        },
+        "ActualFieldEndDate": {
+            "title": "ActualFieldEndDate"
+        },
+        "ActualDeliveryToGODate": {
+            "title": "ActualDeliveryToGODate"
+        },
+        "PlatformProjectId": {
+            "title": "PlatformProjectId"
+        },
+        "ChangesAfterLiveLinkCreated": {
+            "title": "ChangesAfterLiveLinkCreated"
+        },
+        "ErrorsAfterLiveLinkCreated": {
+            "title": "ErrorsAfterLiveLinkCreated"
+        },
+        "TotalNumberOfIterations": {
+            "title": "TotalNumberOfIterations",
+            "isTCSOnly": true
+        },
+        "ActualLOI": {
+            "title": "ActualLOI",
+            "isTCSOnly": true
+        },
+        "TotalCompletes": {
+            "title": "TotalCompletes"
+        },
+        "CancelledDate": {
+            "title": "CancelledDate"
+        },
+        "ReasonForCancellation": {
+            "title": "ReasonForCancellation",
+            "isTCSOnly": true
+        }
+    }
+}

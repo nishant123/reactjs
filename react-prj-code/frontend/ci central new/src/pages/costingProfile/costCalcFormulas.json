@@ -1,0 +1,82 @@
+{
+  "CostTotalExternalOperations": {
+    "CostExtOpsInterviewers": [
+      "InterviewingCostQNR1",
+      "InterviewingCostQNR2",
+      "InterviewingCostQNR3",
+      "FieldworkPaymentInterviewerSupervisors",
+      "PaymentsSupervisors"
+    ],
+    "CostExtOpsDCQCDPSP": [
+      "OutsourcedVendorDataCollection",
+      "QCPaymentPartTimers",
+      "ProgrammingCosts",
+      "CostCompletedSample",
+      "DataEntryCosts",
+      "DataProcessingCosts",
+      "CodingCosts",
+      "VerbatimTypingCosts",
+      "ChartingCosts",
+      "QuestionnaireTranslationCosts",
+      "VerbatimTranslationCosts"
+    ],
+    "CostExtOpsTE": [
+      "FieldTravelStaySupervisorInterviewerMC",
+      "FieldTravelStaySupervisor",
+      "FieldTravelStayInterviewer",
+      "FieldTravelCostCarHireTaxiPublicTransport",
+      "FieldTravelStayManagersExecutives"
+    ],
+    "CostExtOpsOthers": [
+      "Insurance",
+      "DeskResearchSupport",
+      "BufferAdditionalCostExtraOnlineCompletes",
+      "FieldworkTeamAdminCost",
+      "OtherFieldCost1",
+      "OtherFieldCost2",
+      "OtherFieldCost3",
+      "EquipmentCosts",
+      "HostingCosts",
+      "OtherSUDCost1",
+      "OtherSUDCost2",
+      "OtherSUDCost3",
+      "CopyPasteTranslationCosts",
+      "OtherTranslationCosts1",
+      "OtherTranslationCosts2",
+      "OtherTranslationCosts3",
+      "MealAndOtherAllowance",
+      "SamplesVideoAudio",
+      "TapesToClient",
+      "TelephoneCellularData",
+      "OtherGeneralExpenses",
+      "OtherOtherCosts1",
+      "OtherOtherCosts2",
+      "OtherOtherCosts3"
+    ],
+    "CostExtOpsIncentives": [
+      "IncentivesRespondents",
+      "IncentivesOverRecruitment"
+    ],
+    "CostExtOpsConsultantVendor": [
+      "TranscriptionCosts",
+      "TranscriptsTranslationCosts",
+      "SimulatenousTranslationCosts",
+      "Moderation"
+    ],
+    "CostExtOpsPrintingStationery": ["PrintingStationaryCosts"],
+    "CostExtOpsFreightShipping": ["FreightShipping"],
+    "CostExtOpsVenueHireRecruitment": ["VenueHire", "EquipmentCost"]
+  },
+  "CostTotalInternalOperations": {
+    "CostIntOpsFieldPMQC": ["DataCollectionCosts", "PMCosts"],
+    "CostIntOpsOthers": ["FieldTimeOtherCosts1", "OpsTimeOtherCosts"],
+    "CostIntOpsProgramming": ["ProgrammingCosts"],
+    "CostIntOpsDPCodingAnalysis": ["DPCACosts"]
+  },
+  "CostTotalExternalCommercial": {
+    "CostExtCommTE": ["TravelAndStay"],
+    "CostExtCommConsultant": ["OutsourcedServices"],
+    "CostExtCommOthers": ["CSOtherCosts1", "CSOtherCosts2", "CSOtherCosts3"]
+  },
+  "CostTotalInternalCommercial": {}
+}

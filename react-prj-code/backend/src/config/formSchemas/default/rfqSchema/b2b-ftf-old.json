@@ -1,0 +1,926 @@
+{
+  "title": "B2B-FTF",
+  "properties": {
+    "citiesCoverage": {
+      "title": "Cities Coverage",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Sample Details"
+    },
+    "sampleSizeMain": {
+      "title": "Sample size (Main)",
+      "type": "integer",
+      "minimum": 0
+    },
+    "sampleSizeBooster": {
+      "title": "Sample size (Booster)",
+      "type": "integer",
+      "minimum": 0
+    },
+    "sampleSizeOther": {
+      "title": "Sample size 3 (Other)",
+      "type": "integer",
+      "minimum": 0
+    },
+    "lengthOfInterview": {
+      "title": "Length of Interview",
+      "type": "string",
+      "optionsLabel": "LengthOfInterviewOptions"
+    },
+    "targetGroupDefinition": {
+      "title": "Target Group definition",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "sampleListByClient": {
+      "title": "Sample / List provided by client",
+      "type": "string",
+      "enum": ["Yes, Client List", "Yes, Not Client List", "No"]
+    },
+    "sampleRatio": {
+      "title": "Sample Ratio",
+      "type": "string"
+    },
+    "recruitmentDifficulty": {
+      "title": "Recruitment difficulty",
+      "type": "string",
+      "enum": ["Easy", "Medium", "Hard"]
+    },
+    "clientNameDisclosed": {
+      "title": "Client name disclosed to respondents?",
+      "type": "string",
+      "enum": [
+        "Yes, at recruitment stage",
+        "Yes, at the end of interview",
+        "No, never"
+      ]
+    },
+    "boosters": {
+      "title": "Boosters?",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "boostersType": {
+      "title": "Boosters Type",
+      "type": "string",
+      "enum": ["Boost to meet", "Augmented"]
+    },
+    "incidenceRate": {
+      "title": "Incidence rate",
+      "type": "string"
+    },
+    "interviewingTools": {
+      "title": "Interviewing Tools",
+      "type": "string",
+      "enum": ["Pen & Paper", "CATI", "CAPI", "CAWI/Online", "Other Specify"]
+    },
+    "preRecruitment": {
+      "title": "Pre-Recruitment",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "samplingType": {
+      "title": "Sampling Type",
+      "type": "string",
+      "enum": [
+        "Random Sampling",
+        "Quota Sampling",
+        "Client List/Database",
+        "Snowballing",
+        "Online Panel",
+        "Other Specify"
+      ]
+    },
+    "age": {
+      "title": "Age",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Quota"
+    },
+    "gender": {
+      "title": "Gender",
+      "type": "string"
+    },
+    "brandCategory": {
+      "title": "Brand/Category Usage",
+      "type": "string"
+    },
+    "socialClass": {
+      "title": "Social Class (SEC)/Income",
+      "type": "string"
+    },
+    "race": {
+      "title": "Race",
+      "type": "string"
+    },
+    "regionCity": {
+      "title": "Region/City",
+      "type": "string"
+    },
+    "otherSpecify1": {
+      "title": "Other Specify 1",
+      "type": "string"
+    },
+    "otherSpecify2": {
+      "title": "Other Specify 2",
+      "type": "string"
+    },
+    "otherSpecify3": {
+      "title": "Other Specify 3",
+      "type": "string"
+    },
+    "additionalRequirements": {
+      "title": "Additional Requirements",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "widgetType": "textarea",
+      "isNewSection": true,
+      "sectionTitle": "Special Requirements"
+    },
+    "referencePreviousProjects": {
+      "title": "Reference to previous projects of similar nature (job no):",
+      "type": "string"
+    },
+    "productType": {
+      "title": "Product type",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "widgetType": "textarea",
+      "isNewSection": true,
+      "sectionTitle": "Product Test"
+    },
+    "productPackageType": {
+      "title": "Product Package type",
+      "type": "string"
+    },
+    "productSize": {
+      "title": "Product Size",
+      "type": "string"
+    },
+    "productWeight": {
+      "title": "Product Weight",
+      "type": "string"
+    },
+    "productForm": {
+      "title": "Product form (liquid, powder, cream, etc.)",
+      "type": "string"
+    },
+    "storageRequirement": {
+      "title": "Storage Requirement (where to store, refrigeration needed, etc.)",
+      "type": "string"
+    },
+    "purchasesRequired": {
+      "title": "Any Purchases Required",
+      "type": "string"
+    },
+    "transportRequired": {
+      "title": "Transportation Needed from one city to the others",
+      "type": "string"
+    },
+    "placementStudy": {
+      "title": "Placement study?",
+      "type": "string",
+      "enum": ["Diary", "Sample"]
+    },
+    "productSpecialRequirements": {
+      "title": "Product/ Taste Test special Requirements",
+      "type": "string"
+    },
+    "additionalInfo": {
+      "title": "Any other additional information / Requirement",
+      "type": "string"
+    },
+    "clientSamplesAfterFieldWork": {
+      "title": "Client samples after fieldwork:",
+      "type": "string"
+    },
+
+    "clientsHelpApproach": {
+      "title": "Client's help to approach respondents / Client will help in recruitment?",
+      "type": "string",
+      "enum": ["Yes", "No"],
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "B2B"
+    },
+    "interviewerRequirements": {
+      "title": "Interviewer Requirements",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "numberOfInterviewsPerCompany": {
+      "title": "Number Of Interviews Per Company",
+      "type": "integer"
+    },
+    "recordingRequirement": {
+      "title": "Recording/Photo taking requirement (Video recording, audio taping), etc.",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "sourceOfRespondents": {
+      "title": "Source Of Respondents",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "responsibleForRecruitment": {
+      "title": "Responsible For Recruitment",
+      "type": "string"
+    },
+    "specifyToWhatExtent": {
+      "title": "Specify, To What Extent?",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "otherNotesB2B": {
+      "title": "Other Notes",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "specifyVenueCondition": {
+      "title": "Specify Venue Condition",
+      "type": "string",
+      "widgetType": "textarea",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Data Collection"
+    },
+    "respondentRequirements": {
+      "title": "Respondent requirements",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "facilityRequirements": {
+      "title": "Facility requirements",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "selfReclaiming": {
+      "title": "Self Reclaiming",
+      "type": "string"
+    },
+    "formatOfDiary": {
+      "title": "Format Of Diary",
+      "type": "string"
+    },
+    "diaryReclaiming": {
+      "title": "Diary Reclaiming",
+      "type": "string"
+    },
+    "serviceUpTo": {
+      "title": "Service Up To",
+      "type": "string",
+      "enum": ["Full Report", "Summary (Top Line)", "Moderation"]
+    },
+    "clientProvidedVenue": {
+      "title": "Specify Venue Condition",
+      "type": "string",
+      "widgetType": "textarea",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Central Location Test"
+    },
+    "includesMockUpShelf": {
+      "title": "Includes Mock up Shelf?",
+      "type": "string"
+    },
+    "specialVenueRequirements": {
+      "title": "Special Venue Requirements",
+      "type": "string"
+    },
+    "productDescription": {
+      "title": "Product description",
+      "type": "string"
+    },
+    "productMaskingLabelling": {
+      "title": "Product Masking/Labeling",
+      "type": "string"
+    },
+    "procurementOfTestProducts": {
+      "title": "Procurement of test products",
+      "type": "string"
+    },
+    "totalNumberOfProductsToProcure": {
+      "title": "Total number of products to procure",
+      "type": "integer"
+    },
+    "productStorageRequirement": {
+      "title": "Product Storage Requirement",
+      "type": "string"
+    },
+    "specialCLTProcedure": {
+      "title": "Special CLT Procedure",
+      "type": "string"
+    },
+    "numberOfProductsToBePlacedPerRespondent": {
+      "title": "No. of products to be placed per respondent",
+      "type": "integer"
+    },
+    "numberOfVisits": {
+      "title": "No. of Visits",
+      "type": "integer"
+    },
+    "notesOfProcurementOfTestProducts": {
+      "title": "Notes on procurement of test products",
+      "type": "string"
+    },
+    "specialProductTestProcedure": {
+      "title": "Special Product Test Procedure",
+      "type": "string"
+    },
+    "otherNotesCentralLocationTest": {
+      "title": "Other Notes",
+      "type": "string"
+    },
+    "lengthOfInterviewInterval": {
+      "title": "Length Of Interview Interval",
+      "type": "integer",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Pre And Post Test"
+    },
+    "sameRespondents": {
+      "title": "Same Respondents?",
+      "type": "string"
+    },
+    "numberOfInterviewsPerRespondent": {
+      "title": "Number Of Interviews Per Respondent",
+      "type": "integer"
+    },
+    "otherNotesPreAndPostTest": {
+      "title": "Other Notes",
+      "type": "string",
+      "widgetType": "textarea"
+    },
+    "numberOfQuestionnaires": {
+      "title": "Number Of Questionnaires",
+      "type": "integer",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Questionnaire Design"
+    },
+    "numberOfQuestions": {
+      "title": "Number Of Questions",
+      "type": "integer"
+    },
+    "numberOfOpenEnded": {
+      "title": "Number Of Open Ended",
+      "type": "integer"
+    },
+    "numberOfSemiOpenEnded": {
+      "title": "Number Of Semi Open Ended",
+      "type": "integer"
+    },
+    "anyStimulus": {
+      "title": "Any stimulus (e.g. images/concept boards, etc.)",
+      "widgetType": "textarea",
+      "type": "string"
+    },
+    "percentageExpectedChange": {
+      "title": "% expected change in questionnaire in each wave (if Multi Wave)",
+      "type": "string",
+      "enum": ["0-10% Change", "11-30% Change", "31-60% Change", ">60% Change"]
+    },
+    "translationRequired": {
+      "title": "Translation Required",
+      "type": "string",
+      "enum": ["Yes", "No"],
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Translation"
+    },
+    "translationLanguages": {
+      "title": "Translation Languages",
+      "widgetType": "textarea",
+      "type": "string"
+    },
+    "verbatimTranslationRequired": {
+      "title": "Verbatim Translation Required",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "codingRequired": {
+      "title": "Coding Required",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Coding",
+      "enum": ["Yes", "No"]
+    },
+    "numberOfOpenEndedToCode": {
+      "title": "Number Of Open Ended To Be Coded",
+      "type": "integer"
+    },
+    "numberOfSemiOpenEndedToCode": {
+      "title": "Number Of Semi Open Ended To Be Coded",
+      "type": "integer"
+    },
+    "deliverableTypes": {
+      "title": "Deliverable Types",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "CE+OE Tables",
+          "CE Tables",
+          "Interim Table",
+          "Top Line/KPI",
+          "Excel Tables",
+          "Quanvert",
+          "Q",
+          "SPSS",
+          "Resolve",
+          "JMP (for P&G studies)",
+          "Raw data (ASCII/Excel)",
+          "One table per sheet",
+          "All tables in one sheet",
+          "Branded Proprietory Products",
+          "WB (with Kruskal, Netted WB, Category WB, BEI score in tables)",
+          "eQ",
+          "CE / RSI",
+          "FACTOR",
+          "Regression (Linear, Shapley Value etc.)",
+          "Correlation",
+          "EPIC Calc",
+          "Correspondence / GAP analysis/ Brand Map",
+          "Kruskal Derived Importance Score",
+          "Penalty Analysis (with Lifter Score for Pepsi Client only)",
+          "Balance Detector",
+          "Jaccard",
+          "Normalization / Pearson Residual Index",
+          "PSM",
+          "Rank Order Analysis (Only for Africa)",
+          "Decision Tree (Summary Table - Only for Africa)",
+          "Incidence Calculation",
+          "Cross Brand Affinity",
+          "BEI / BEM",
+          "WB Foresight",
+          "Brand Builder",
+          "Segmentation",
+          "BPCM",
+          "Conjoint Analysis",
+          "Pair test",
+          "Product testing suite",
+          "Special Products",
+          "Eye Tracking",
+          "Path Tracking",
+          "Tabulation Language",
+          "English",
+          "Other",
+          "Table Sets",
+          "Abs+%+Sig",
+          "%+Sig",
+          "% Only",
+          "Abs Only",
+          "Abs+Sig",
+          "Abs+%",
+          "Weighting",
+          "Sig testing",
+          "Brand Leverage"
+        ]
+      },
+      "uniqueItems": true,
+      "isMulti": true,
+      "widgetType": "multiselectdropdown",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "SetUp and Delivery"
+    },
+    "statisticalAnalysisComments": {
+      "title": "Statistical Analysis Comments",
+      "type": "string"
+    },
+    "qualityControl": {
+      "title": "Quality Control",
+      "type": "string",
+      "enum": [
+        "No QC",
+        "Standard QC(Check Specification Sheet for details of standard backcheck)",
+        "Non-standard QC(Specify %)"
+      ]
+    },
+    "qualityControlComments": {
+      "title": "Quality Control Comments",
+      "type": "string"
+    },
+    "clientSamplesAfterFW": {
+      "title": "Client Samples After Field Work",
+      "type": "string",
+      "enum": ["Destroyed by Nielsen", "Returned to Client", "No Samples"]
+    },
+    "numberOfSlides": {
+      "title": "Number of Slides (Per Wave Per Country)",
+      "type": "integer",
+      "minimum": 0
+    },
+    "numberOfExcelFiles": {
+      "title": "Number of Excel Files",
+      "type": "integer",
+      "minimum": 0
+    },
+    "numberOfRoboCharts": {
+      "title": "Number of Robo Chart Run",
+      "type": "integer",
+      "minimum": 0
+    },
+    "numberOFBrandMap": {
+      "title": "Number of Brand Map",
+      "type": "integer",
+      "minimum": 0
+    },
+    "winningBrandSets": {
+      "title": "Winning Brand Sets (BEI, BEM Analysis)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "CESets": {
+      "title": "CESets (CSAT PROJECTS) - RSI, CBI Analysis",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "multiVariantAnalysisSets": {
+      "title": "Multi-Variant Analysis Sets (Factor, Regression)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "eQSets": {
+      "title": "eQ Sets (Custoer Equation Sets)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "SPSSDataFile": {
+      "title": "SPSS Data File (Brand/Product Level SPSS)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "excelDataFile": {
+      "title": "Excel Data File (Report File for further Analysis)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "ASCIIDataFile": {
+      "title": "ASCII Data File (ASCII based on Client Data Map)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "QDFDevelopment": {
+      "title": "QDF Development (QDF Program for OE)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "dataAlignment": {
+      "title": "Data Alignment (Diary Level, Process Level Data)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "weighting": {
+      "title": "Weighting ( Rim, factor, pre-post weighting)",
+      "type": "string",
+      "enum": ["Yes", "No"]
+    },
+    "translationOfScreener": {
+      "title": "Translation of screener and questionnaire/discussion guide",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Responsibilities",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "preparationOfStimulus": {
+      "title": "Preparation of stimulus to be used locally",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "scripting": {
+      "title": "Scripting for CAPI or CATI or Online",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "recruitment": {
+      "title": "Recruitment",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "fieldwork": {
+      "title": "Fieldwork",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "pilotInterviews": {
+      "title": "Pilot Interviews",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "dataMapInEnglish": {
+      "title": "Data map in English",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "masterCodeFrameInEnglish": {
+      "title": "Master code frame in English",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "newCodesInEnglish": {
+      "title": "New codes in English",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "coding": {
+      "title": "Coding of open ended and semi open ended questions",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "openEndedVerbatims": {
+      "title": "Open ended verbatims",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "cleanFinalDataFile": {
+      "title": "Clean Final data file",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "dataProcessing": {
+      "title": "Data Processing",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "toplineAnalysis": {
+      "title": "Topline Analysis",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "onlineTelephoneBriefing": {
+      "title": "Online/Telephone briefing with moderator",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "simultaneousTranslation": {
+      "title": "Simultaneous translation",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "viewingFacility": {
+      "title": "Viewing Facility",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "moderation": {
+      "title": "Moderation",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "transcriptionLocalToEnglish": {
+      "title": "Transcription (Local Language to English)",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "audioVideoTapes": {
+      "title": "Audio/ Video tapes",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "localReportTemplate": {
+      "title": "Local Report Template",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "localReportChartingCommentaryAnalysis": {
+      "title": "Local Report (Charting, Commentary & Analysis)",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "dashboard": {
+      "title": "Dashboard",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "otherResponsibilities1": {
+      "title": "Other (specify):",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "otherResponsibilities2": {
+      "title": "Other (specify):",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "otherResponsibilities3": {
+      "title": "Other (specify):",
+      "type": "string",
+      "enum": ["Commissioning Country", "Field Supplier", "Not Applicable"],
+      "isMultiCountry": true
+    },
+    "questionnaireAvailable": {
+      "title": "Questionnaire available",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Timing",
+      "format": "date"
+    },
+    "projectSetUp": {
+      "title": "Project set up",
+      "type": "string",
+      "format": "date"
+    },
+    "recruitmentTiming": {
+      "title": "Recruitment",
+      "type": "string",
+      "format": "date"
+    },
+    "estimatedFieldworkStart": {
+      "title": "Estimated start of fieldwork",
+      "type": "string",
+      "format": "date"
+    },
+    "estimatedFieldworkEnd": {
+      "title": "Estimated end of fieldwork",
+      "type": "string",
+      "format": "date"
+    },
+    "dataDelivery": {
+      "title": "Data delivery",
+      "type": "string",
+      "format": "date"
+    },
+    "reportDelivery": {
+      "title": "Report delivery",
+      "type": "string",
+      "format": "date"
+    },
+    "otherInstructionsRemarks": {
+      "title": "Other instructions / Remarks",
+      "type": "string",
+      "classNames": "break-before col-lg-6 col-md-6 col-sm-12 col-xs-12",
+      "isNewSection": true,
+      "sectionTitle": "Special Requirements/Others",
+      "widgetType": "textarea"
+    }
+  },
+  "order": [
+    "citiesCoverage",
+    "sampleSizeMain",
+    "sampleSizeBooster",
+    "sampleSizeOther",
+    "lengthOfInterview",
+    "targetGroupDefinition",
+    "sampleListByClient",
+    "sampleRatio",
+    "recruitmentDifficulty",
+    "clientNameDisclosed",
+    "boosters",
+    "boostersType",
+    "incidenceRate",
+    "interviewingTools",
+    "preRecruitment",
+    "samplingType",
+    "age",
+    "gender",
+    "brandCategory",
+    "socialClass",
+    "race",
+    "regionCity",
+    "otherSpecify1",
+    "otherSpecify2",
+    "otherSpecify3",
+    "additionalRequirements",
+    "ReferencePreviousProjects",
+    "productType",
+    "productPackageType",
+    "productSize",
+    "productWeight",
+    "productForm",
+    "storageRequirement",
+    "purchasesRequired",
+    "transportRequired",
+    "placementStudy",
+    "productSpecialRequirements",
+    "additionalInfo",
+    "clientSamplesAfterFieldWork",
+    "clientsHelpApproach",
+    "interviewerRequirements",
+    "numberOfInterviewsPerCompany",
+    "recordingRequirement",
+    "sourceOfRespondents",
+    "responsibleForRecruitment",
+    "specifyToWhatExtent",
+    "otherNotesB2B",
+    "specifyVenueCondition",
+    "respondentRequirements",
+    "facilityRequirements",
+    "selfReclaiming",
+    "formatOfDiary",
+    "diaryReclaiming",
+    "serviceUpTo",
+    "clientProvidedVenue",
+    "includesMockUpShelf",
+    "specialVenueRequirements",
+    "productDescription",
+    "productMaskingLabelling",
+    "procurementOfTestProducts",
+    "totalNumberOfProductsToProcure",
+    "productStorageRequirement",
+    "specialCLTProcedure",
+    "numberOfProductsToBePlacedPerRespondent",
+    "numberOfVisits",
+    "notesOfProcurementOfTestProducts",
+    "specialProductTestProcedure",
+    "otherNotesCentralLocationTest",
+    "lengthOfInterviewInterval",
+    "sameRespondents",
+    "numberOfInterviewsPerRespondent",
+    "otherNotesPreAndPostTest",
+    "numberOfQuestions",
+    "numberOfOpenEnded",
+    "numberOfSemiOpenEnded",
+    "anyStimulus",
+    "percentageExpectedChange",
+    "translationRequired",
+    "translationLanguages",
+    "verbatimTranslationRequired",
+    "codingRequired",
+    "numberOfOpenEndedToCode",
+    "numberOfSemiOpenEndedToCode",
+    "deliverableTypes",
+    "statisticalAnalysisComments",
+    "qualityControl",
+    "qualityControlComments",
+    "clientSamplesAfterFW",
+    "numberOfSlides",
+    "numberOfExcelFiles",
+    "numberOfRoboCharts",
+    "numberOFBrandMap",
+    "winningBrandSets",
+    "CESets",
+    "multiVariantAnalysisSets",
+    "eQSets",
+    "SPSSDataFile",
+    "excelDataFile",
+    "ASCIIDataFile",
+    "QDFDevelopment",
+    "dataAlignment",
+    "weighting",
+    "translationOfScreener",
+    "preparationOfStimulus",
+    "scripting",
+    "recruitment",
+    "fieldwork",
+    "pilotInterviews",
+    "dataMapInEnglish",
+    "masterCodeFrameInEnglish",
+    "newCodesInEnglish",
+    "coding",
+    "openEndedVerbatims",
+    "cleanFinalDataFile",
+    "dataProcessing",
+    "toplineAnalysis",
+    "onlineTelephoneBriefing",
+    "simultaneousTranslation",
+    "viewingFacility",
+    "moderation",
+    "transcriptionLocalToEnglish",
+    "audioVideoTapes",
+    "localReportTemplate",
+    "localReportChartingCommentaryAnalysis",
+    "dashboard",
+    "otherResponsibilities1",
+    "otherResponsibilities2",
+    "otherResponsibilities3",
+    "projectSetUp",
+    "recruitmentTiming",
+    "estimatedFieldworkStart",
+    "estimatedFieldworkEnd",
+    "dataDelivery",
+    "reportDelivery",
+    "otherInstructionsRemarks",
+    "*"
+  ]
+}

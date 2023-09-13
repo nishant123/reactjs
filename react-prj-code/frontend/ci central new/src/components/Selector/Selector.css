@@ -1,0 +1,11 @@
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: white;
+}
+
+.selector {
+  height: 200px;
+}

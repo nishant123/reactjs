@@ -1,0 +1,45 @@
+{
+  "title": "",
+  "properties": {
+    "ProjectKickoff": {
+      "title": "Project Kickoff",
+      "type": "number"
+    },
+    "QuestionnaireGuidePreparation": {
+      "title": "Questionnaire/Screener/Discussion Guide Preparation",
+      "type": "number"
+    },
+    "SampleDesign": {
+      "title": "Sample Design",
+      "type": "number"
+    },
+    "FieldworkBriefing": {
+      "title": "Fieldwork briefing",
+      "type": "number"
+    },
+    "ProjectManagement": {
+      "title": "Project Management",
+      "type": "number"
+    },
+    "Fieldwork": {
+      "title": "Fieldwork (incl. Moderation)",
+      "type": "number"
+    },
+    "DataProcessing": {
+      "title": "Data processing & analysis",
+      "type": "number"
+    },
+    "ReportPreparation": {
+      "title": "Report Preparation (Includes Finalisation of Report Template, Topline Report, Final Report etc.)",
+      "type": "number"
+    },
+    "Presentation": {
+      "title": "Presentation",
+      "type": "number"
+    },
+    "MiscTime": {
+      "title": "Revision & Misc Time (if any)",
+      "type": "number"
+    }
+  }
+}

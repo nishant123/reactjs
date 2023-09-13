@@ -1,0 +1,62 @@
+[
+	{
+		"title": "TIMINGS (Number of Working Days)",
+		"properties": {
+			"ProjectSetup": {
+				"title": "Project setup",
+				"type": "number",
+				"minimum": 0
+			},
+			"QuestionnaireSetup": {
+				"title": "Questionnaire setup",
+				"type": "number",
+				"minimum": 0
+			},
+			"QuestionnaireTranslation": {
+				"title": "Questionnaire translation",
+				"type": "number",
+				"minimum": 0
+			},
+			"PreRecruit": {
+				"title": "Pre recruitment (if applicable)",
+				"type": "number",
+				"minimum": 0
+			},
+			"FieldWork": {
+				"title": "Fieldwork",
+				"type": "number",
+				"minimum": 0
+			},
+			"DataProcessing": {
+				"title": "Data processing",
+				"type": "number",
+				"minimum": 0
+			},
+			"InterimData": {
+				"title": "Interim data (# of days after FW start)",
+				"type": "number",
+				"minimum": 0
+			},
+			"DataFileCleaning": {
+				"title": "Up to clean data file (incl. coding, data entry, data cleaning, scanning etc.)",
+				"type": "number",
+				"minimum": 0
+			},
+			"TranscriptionQual": {
+				"title": "Up to audio/video tapes/transcripts(FOR QUAL ONLY)",
+				"type": "number",
+				"minimum": 0
+			},
+			"AnalysisReporting": {
+				"title": "Analysis and local reportings",
+				"type": "number",
+				"minimum": 0
+			},
+			"TotalDuration": {
+				"title": "Total duration (No Of Working Days)",
+				"type": "number",
+				"minimum": 0
+			}
+		}
+	}
+]

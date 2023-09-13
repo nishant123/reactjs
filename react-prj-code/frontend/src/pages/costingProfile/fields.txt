@@ -1,0 +1,15 @@
+// Aggregated
+"CostExtCharting",
+"CostIntCharting",
+"CostExtDataProcessing",
+"CostIntDataProcessing",
+"CostExtVerbatimCoding",
+"CostIntVerbatimCoding",
+"CostExtTextAnalytics",
+"CostIntSurveyProgramming",
+"CostExtSurveyProgramming",
+"CostIntOtherDataPreparation",
+"CostIntAdditionalOperationsSupport",
+"SurveyProgrammingJobCount"
+============================
+// New

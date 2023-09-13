@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+</head>
+<style>
+    table {
+        border: 1px solid !important;
+        border-collapse: collapse !important;
+    }
+
+    td,
+    th {
+        padding: 5px;
+        border-collapse: collapse !important;
+        border: 1px solid !important;
+    }
+
+    .text-uppercase {
+        text-transform: uppercase;
+    }
+</style>
+
+<body style="text-align: left;">
+    <table style="border-spacing: 0;width: 50rem;">
+        <tr style="height:56pt">
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);padding:5pt;overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;text-align:center;margin-top:0pt;margin-bottom:0pt"> <span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:54px;height:54px"><img
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/EWN-Note.png"
+                                width="41" height="54" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+            <td style="vertical-align:middle;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:18pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-weight:700;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;">EARLY
+                        WARNING NOTE</span></p>
+            </td>
+            <td style="vertical-align:top;background-color:rgb(178,29,172);overflow:hidden">
+                <p dir="ltr" style="line-height:1.2;margin-top:0pt;margin-bottom:0pt"><span
+                        style="font-size:11pt;font-family:Arial;color:rgb(255,255,255);background-color:transparent;font-variant-numeric:normal;font-variant-east-asian:normal;vertical-align:baseline;white-space:pre-wrap"><span
+                            style="border:none;display:inline-block;overflow:hidden;width:26px;height:37px"><img
+                                alt="N-Element-Tab-White_RGB.png"
+                                src="https://storage.googleapis.com/workflow-tool-static-resources/N-Element-Tab-White_RGB.png"
+                                width="26" height="37" style="margin-left:0px;margin-top:0px"
+                                class="CToWUd"></span></span></p>
+            </td>
+        </tr>
+    </table>
+    <div style="width: 50rem;">
+        <p style="font-size: 18pt;font-family: Arial;color: rgb(0,0,0);font-weight: 700;">
+            <%=wave.EWNVersion>1?"COMMISSIONED PROJECT UPDATED":"NEW PROJECT COMMISSIONED"%></p>
+
+        <p><strong>Dear teams,</strong><br><br>
+            Following are the details of
+            <%=wave.EWNVersion>1?"the project updated by ":"a new project commissioned by "%><a style="color: #15c;"
+                target="_blank" href="mailto:<%=ewnSender%>"><%=ewnSender%></a> for
+            <%=(codeLabels.FieldingCountriesOptions.filter(final => final.Code == wave.CostingProfile.Project.CommissioningCountry))[0].Label%>
+            <%=codeLabels.BusinessUnitOptions.Label%>. For any
+            further questions regarding this project, please contact
+            <a style="color: #15c;" href="mailto:<%=opsContacts%>"><%=opsContacts%></a>.</p>
+
+    </div>
+    <div style="width: 50rem;">
+        <p>All input material for this project can be accessed from the <a target="_blank" style="color: #15c;"
+                href="https://drive.google.com/drive/folders/<%=wave.CostingProfile.Project.ProjectResourcesFolderId%>">project
+                resources
+                folder</a>.</p>
+    </div>
+    <div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="project-details">
+            <h3 colspan="12" style="text-transform:uppercase;">
+                Project Details</h3>
+            <table style="background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+                <tbody>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project Name</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= wave.CostingProfile.Project.ProjectName %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Wave Number</td>
+                        <%if (wave.CostingProfile.IsTracker){%>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            #<%=wave.WaveNumber%><%=wave.WaveName?" - "+wave.WaveName:""%>
+                        </td>
+                        <%}else{%>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Not Applicable</td>
+                        <%}%>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Project Number</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= wave.CostingProfile.Project.ProjectId %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Primary Nielsen Contact
+                            Email
+                        </td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= wave.CostingProfile.Project.ProposalOwnerEmail.value %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Other Project Team Contacts
+                        </td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+
+                            <ul style="list-style:none;padding:0;">
+                                <% wave.CostingProfile.Project.OtherProjectTeamContacts.forEach(function(item){ %>
+                                <li style="margin:0;">
+                                    <%= item.value %>
+                                </li>
+                                <% }) %>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Syndicated Project</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%=wave.CostingProfile.Project.IsSyndicated?"Yes":"No"%></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Client Details</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <ul style="list-style:none;padding:0;">
+                                <%if(wave.CostingProfile.Project.ContractDetails){%>
+                                <% wave.CostingProfile.Project.ContractDetails.forEach(function(item){ %>
+                                <li style="margin:0;">
+                                    <%= item.AccountName %> <%if(item.OpportunityNumber) {%>
+																	 - (<%=item.OpportunityNumber%>) 
+																	<%} %>
+                                </li>
+                                <% }) %>
+                                <%}%>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Commissioning Office</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%=codeLabels.OfficeOptions.Label %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Business Unit</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= codeLabels.BusinessUnitOptions.Label %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Vertical</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%= codeLabels.VerticalOptions.Label %></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">All Fielding Countries</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%if(wave.CostingProfile.FieldingCountries && typeof wave.CostingProfile.FieldingCountries == "string") {%>
+                            <ul style="list-style:none;padding:0;">
+
+                                <%wave.CostingProfile.FieldingCountries.split(",").forEach(function(fc){%>
+                                <li style="margin:0;"><%=(codeLabels.FieldingCountriesOptions.filter(final => final.Code == fc))[0].Label%>
+                                </li>
+                                <%})%>
+
+                            </ul>
+                            <%}%>
+    
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">Methodologies</td>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+<ul style="list-style:none;padding:0;">
+    <%wave.CostingProfile.Methodology.split(",").forEach(function(item){%>
+
+                            <li style="margin:0;"><%=(codeLabels.MethodologyOptions.filter(final => final.Code == item))[0].Label%>
+                            </li>
+                                <%})%>
+                                </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Tracker</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=wave.CostingProfile.IsTracker ? "Yes" : "No"%></td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Tracking Frequency</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=wave.CostingProfile.IsTracker ?codeLabels.TrackingFrequencyOptions.filter(frq => frq.Code == wave.CostingProfile.TrackingFrequency)[0].Label :"NA"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">Total Waves</td>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=wave.CostingProfile.IsTracker ? wave.CostingProfile.NumberOfWaves:"NA"%></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="schedule">
+
+            <h3 colspan="12" style="text-transform:uppercase;">
+                <%="Schedule"%></h3>
+            <table
+                style=" background-color:white!important;border:1px solid; border-collapse:collapse; width: inherit;">
+
+                <tbody>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px"><%="Date Commissioned"%>
+                        </th>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%=wave.DateWaveCommissioned?new Date(wave.DateWaveCommissioned).toDateString():"Not Available"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            Date Final Questionnaire Available</th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateFinalQuestionnaireNA?new Date(wave.DateFinalQuestionnaire).toDateString():"No Programming Required"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid; border-collapse: collapse; padding: 5px"><%="Date Field Start"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateFieldworkNA?new Date(wave.DateFieldStart).toDateString():"No Fieldwork Required"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid; border-collapse: collapse; padding: 5px"><%="Date Field End"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateFieldworkNA?new Date(wave.DateFieldEnd).toDateString():"No Fieldwork Required"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%="Date Data Processing Due"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateDataProcessingNA?new Date(wave.DateDataProcessing).toDateString():"No Data Processing Required"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px"><%="Date Dashboard Due"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateDashboardsNA?new Date(wave.DateDashboards).toDateString():"No Dashboards Required"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px"><%="Date Charts Due"%></th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateChartsNA?new Date(wave.DateCharts).toDateString():"No Charts Required"%></td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%="Date Translations Due"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateTranslationsNA?new Date(wave.DateTranslations).toDateString():"No Translations Required"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border:1px solid; border-collapse:collapse; padding:5px">
+                            <%="Date Verbatim Coding Due"%>
+                        </th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateVerbatimCodingNA?new Date(wave.DateVerbatimCoding).toDateString():"No Verbatim Coding Required"%>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%="Date Final Report Due to the Client"%></th>
+                        <td style="border: 1px solid; border-collapse: collapse; padding: 5px">
+                            <%=!wave.DateFinalReportNA?new Date(wave.DateFinalReport).toDateString():"No Final Reports Required"%>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="ops-resources">
+
+
+            <h3 colspan="12" style="text-transform:uppercase;">
+                <%="Operations Resources Breakdown"%></h3>
+<h5>Not available for migrated projects. Please contact support.</h5>
+        </div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="specifications">
+            <h3 colspan="12" style="text-transform:uppercase;">
+                <%="Fieldwork Specifications"%>
+                <%=wave.CostingProfile.IsMultiCountry ? "(Per Country)" : ""%></h3>
+                <h5>Not available for migrated projects. Please contact support.</h5>
+        </div>
+        <div style="background-color:#e0e0e0; margin-bottom:10px;width: 50rem;padding: 10px;" class="notes">
+
+            <h3 colspan="12" style="text-transform:uppercase;">
+                <%="EWN Notes"%></h3>
+            <table style="border-collapse:collapse; width: inherit;">
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Project Manager"%></b></th>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesPM?wave.NotesPM:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Programming team"%></b></th>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesFinalQuestionnaire?wave.NotesFinalQuestionnaire:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Field Work"%></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesFieldwork?wave.NotesFieldwork:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Data Processing Team"%></b></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesDataProcessing?wave.NotesDataProcessing:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Dashboarding Team"%></b></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesDashboards?wave.NotesDashboards:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Charting Team"%></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesCharts?wave.NotesCharts:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Translations Team"%></b></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesTranslations?wave.NotesTranslations:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Verbatim Coding Team"%></b></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesVerbatimCoding?wave.NotesVerbatimCoding:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Final Reporting"%></b></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesFinalReport?wave.NotesFinalReport:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Notes for Data Science"%></b></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesDataScience?wave.NotesDataScience:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+                <br>
+                <tbody style="margin-bottom: 5px;background-color:white!important;">
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <b><%="Other Notes"%></b></td>
+                    </tr>
+                    <tr>
+                        <td style="border:1px solid; border-collapse:collapse; padding:5px;width: 50rem">
+                            <%=wave.NotesOther?wave.NotesOther:"No notes provided"%></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr />
+    </div>
+</body>
+
+</html>
